@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="refresh" content="1800">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="robots" content="noodp,index, follow">
+	<title><!-- build:title --></title>
+	<meta name="description" content="">
+	<link rel="alternate" href="{$url}" hreflang="vi-vn" />
+	<link rel="shortcut icon" href="images/icons/favicon.ico">
+	<meta property="og:url"			content="" />
+	<meta property="og:type"		content="website" />
+	<meta property="og:title"		content="eBox Econference" />
+	<meta property="og:description" content="eBox Econference" />
+	<meta property="og:image"		content="" />
+
+	<!--Font Google-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- build:cssOnlyPage -->
+
+	<link rel="preload" as="style" type="text/css" href="css/styles-pc.min.css">
+	<link rel="stylesheet" href="css/styles-pc.min.css">
+	<!-- <script src="js/lib/jquery-3.4.1.min.js"></script> -->
+	<script type="text/javascript">
+		var domReadyQueue = [];
+	</script>
+	<link rel="preload" as="script" type="text/javascript" href="js/bundle.min.js">
+
+	<!-- build:headOnlyPage -->
+</head>
+<body class="ebox-body" id="ebox_body" itemscope itemtype="http://schema.org/WebPage">
+	<div class="load">
+		<span class="loading"></span>
+		<span class="loading-txt">Đang xử lý...</span>
+	</div>
+
+	<header class="header_area header_sticky top-bar">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html" alt="eBox - Electronic conference">
+					<img src="images/graphics/logo.svg" alt="eBox - Electronic conference">
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html" title="Về eBox">Về eBox</a></li>
+					<li><a href="#contact" title="Liên hệ">Liên hệ</a></li>
+					<li class="user">
+						<a href="#" title="Đăng nhập" rel="nofollow">
+							<span>Đăng nhập</span>
+						</a> 
+					</li>
+					<li class="back-to-vne"> 
+						<a href="https://vnexpress.net/" title="Truy cập VnExpress.net" rel="nofollow">
+							<span>VnExpress.net</span>
+						</a> 
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+	<!-- build:content -->
+
+
+	<footer id="footer" class="section footer">
+		<div class="container">
+			<div class="box-copyright">
+				<div class="logo-footer">
+					<div class="logo-vne">
+						<img src="images/graphics/logo-vne.svg" alt="">
+					</div>
+					<div class="logo-ebox">
+						<img src="images/graphics/logo-ebox.svg" alt="">
+					</div>
+				</div>
+				<p>© 2021. Toàn bộ bản quyền thuộc VnExpress</p>
+			</div>
+			<div class="info-footer">
+				<div class="info">
+					<a class="item-link" href="/#FAQ" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a>
+					<a class="item-link" href="news.html" title="Tin tức">Tin tức</a>
+					<a class="item-link" href="/#LienHe" title="Liên hệ">Liên hệ</a>
+				</div>
+				<ul>
+					<li><a href="policy.html" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+					<li><a href="rule.html" title="Điều khoản sử dụng">Điều khoản sử dụng</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<div class="scroll-to-top">
+		<a href="javascript:;" id="to_top"></a>
+	</div>
+
+
+
+	<!-- Start popup menu -->
+	<!-- <aside class="aside_area" id="showNavSideMenu">
+	</aside> -->
+	<!-- End popup menu -->
+
+
+	<!-- Start #wrap_popup_page - Group popup page - Globe -->
+	<div class="wrap-popup-page" id="wrap_popup_page">
+		<!-- build:popup -->
+	</div>
+	<!-- End #wrap_popup_page - Group popup page - Globe -->
+
+
+	<!-- <script defer src="js/bundle.min.js"></script> -->
+	<script type="text/javascript" data-type="lazy" data-src="js/bundle.min.js"></script>
+	<script type="text/javascript" id="flying-scripts">
+		const loadScriptsTimer = setTimeout(loadScripts, 2 * 1000);
+		const userInteractionEvents = ["mouseover", "keydown", "touchstart", "touchmove", "wheel"];
+		userInteractionEvents.forEach(function(event) {
+			window.addEventListener(event, triggerScriptLoader, {
+				passive: !0
+			})
+		});
+
+		function triggerScriptLoader() {
+			loadScripts();
+			clearTimeout(loadScriptsTimer);
+			userInteractionEvents.forEach(function(event) {
+				window.removeEventListener(event, triggerScriptLoader, {
+					passive: !0
+				})
+			})
+		}
+
+		function loadScripts() {
+			document.querySelectorAll("script[data-type='lazy']").forEach(function(elem) {
+				elem.setAttribute("src", elem.getAttribute("data-src"))
+			});
+		}
+	</script>
+	<!-- build:jsOnlyPage -->
+
+
+</body>
+</html>

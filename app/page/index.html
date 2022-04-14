@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Trang chủ</title>
+    <meta name="description" content="meta description">
+
+    @@include('templates/meta.html')
+    @@include('templates/styles.html')
+</head>
+<body class="body_area" id="body_area">
+
+    @@include('templates/header.html', { "marquee": true })
+
+    <!-- Start - Content Page Area -->
+
+
+    <section class="section-banner-area">
+      <div class="container clearfix">
+        <div class="area-inner">
+          <div class="wrap-item-text">
+            <h1 class="title-banner">VnExpress <span class="d-inline-block">Digital Expo 2022</span></h1>
+            <p>Giải pháp kết hợp mạnh mẽ giữa công nghệ và truyền thông Nâng tầm chiến lược truyền thông thương hiệu khác biệt - hiệu quả</p>
+            <p><a href="#" title="">Trải nghiệm triển lãm</a></p>
+          </div>
+          <div class="wrap-item-img">
+            <img src="images/circle-banner.png" alt="">
+            <span class="gradient-top"></span>
+            <span class="gradient-conner-left"></span>
+            <span class="gradient-conner-right"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Start Home New Area -->
+    <section class="section-slide-home-area clearfix">
+      <div class="container clearfix">
+          <div class="area-box-title">
+            <h2 class="title-name section-title-larger text-color-01">Sử dụng công nghệ hàng đầu</h2>
+            <div class="group-btn-slide">
+              <div class="swiper-button-prev-slide-technology"></div>
+              <div class="swiper-button-next-slide-technology"></div>
+            </div>
+          </div>
+      </div>
+      <div class="area-box-list">
+        <div class="container clearfix">
+
+          <div class="news-list" id="slide_news">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <a class="item-image-a" href="news-detail-aside-right.html" title="">
+                        <img src="http://via.placeholder.com/435x261/74A9EA/fff" alt="" class="responsive">
+                      </a>
+                    </div>
+                    <div class="item-info">
+                      <h3 class="item-title">
+                        <a class="item-title-a" href="news-detail-aside-right.html" title="">
+                          Hiển thị gian hàng 1 cách trực quan
+                        </a>
+                      </h3>
+                      <a href="#" title="" class="btn-readmore">Trải nghiệm ngay</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End .item-slide -->
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <a class="item-image-a" href="news-detail-aside-right.html" title="">
+                        <img src="http://via.placeholder.com/435x261/74A9EA/fff" alt="" class="responsive">
+                      </a>
+                    </div>
+                    <div class="item-info">
+                      <h3 class="item-title">
+                        <a class="item-title-a" href="news-detail-aside-right.html" title="">
+                          Hiển thị gian hàng 1 cách trực quan
+                        </a>
+                      </h3>
+                      <a href="#" title="" class="btn-readmore">Trải nghiệm ngay</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End .item-slide -->
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <a class="item-image-a" href="news-detail-aside-right.html" title="">
+                        <img src="http://via.placeholder.com/435x261/74A9EA/fff" alt="" class="responsive">
+                      </a>
+                    </div>
+                    <div class="item-info">
+                      <h3 class="item-title">
+                        <a class="item-title-a" href="news-detail-aside-right.html" title="">
+                          Hiển thị gian hàng 1 cách trực quan
+                        </a>
+                      </h3>
+                      <a href="#" title="" class="btn-readmore">Trải nghiệm ngay</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End .item-slide -->
+              <div class="swiper-slide">
+                <div class="news-item">
+                  <div class="item-inner">
+                    <div class="item-image">
+                      <a class="item-image-a" href="news-detail-aside-right.html" title="">
+                        <img src="http://via.placeholder.com/435x261/74A9EA/fff" alt="" class="responsive">
+                      </a>
+                    </div>
+                    <div class="item-info">
+                      <h3 class="item-title">
+                        <a class="item-title-a" href="news-detail-aside-right.html" title="">
+                          Hiển thị gian hàng 1 cách trực quan
+                        </a>
+                      </h3>
+                      <a href="#" title="" class="btn-readmore">Trải nghiệm ngay</a>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End .item-slide -->
+
+            </div>
+            <div class="layer-blur"></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-button-prev-slide-technology"></div>
+          <div class="swiper-button-next-slide-technology"></div>
+          <div class="swiper-pagination-slide-technology"></div>
+
+
+        </div>
+      </div>
+
+
+      <script>
+        domReadyQueue.push(function($){
+          var slide_news = new Swiper('#slide_news', {
+              slidesPerView: 1,
+              slidesPerColumn: 1,
+              spaceBetween: 20,
+              loop: false,
+              loopFillGroupWithBlank: false,
+              speed: 800,
+              watchOverflow: true,
+              pagination: {
+                  el: '.swiper-pagination-slide-technology',
+                  clickable: false,
+              },
+              navigation: {
+                  nextEl: '.swiper-button-next-slide-technology',
+                  prevEl: '.swiper-button-prev-slide-technology',
+              },
+              breakpoints: {
+                  414: {
+                      slidesPerView: 1.1,
+                      spaceBetween: 15,
+                  },
+                  768: {
+                      slidesPerView: 2,
+                  },
+                  992: {
+                      slidesPerView: 2.1,
+                  }
+              }
+          });
+        });
+      </script> 
+    </section>
+    <!-- End Home New Area -->
+
+
+    <section class="section-unit clearfix">
+      <div class="container clearfix">
+        <div class="unit-inner">
+          <div class="unit-box-title">
+            <h2 class="title-name">Các thương hiệu đã hợp tác</h2>
+          </div>
+          <div class="unit-box-list">
+
+            <div class="unit-list" id="slide_unit">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="unit-item">
+                    <div class="item-inner">
+                      <div class="item-image">
+                        <a class="item-image-a" href="" title="">
+                          <img src="images/logo-brand-01.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="unit-item">
+                    <div class="item-inner">
+                      <div class="item-image">
+                        <a class="item-image-a" href="" title="">
+                          <img src="images/logo-brand-02.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="unit-item">
+                    <div class="item-inner">
+                      <div class="item-image">
+                        <a class="item-image-a" href="" title="">
+                          <img src="images/logo-brand-03.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="unit-item">
+                    <div class="item-inner">
+                      <div class="item-image">
+                        <a class="item-image-a" href="" title="">
+                          <img src="images/logo-brand-04.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="unit-item">
+                    <div class="item-inner">
+                      <div class="item-image">
+                        <a class="item-image-a" href="" title="">
+                          <img src="images/logo-brand-05.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="unit-item">
+                    <div class="item-inner">
+                      <div class="item-image">
+                        <a class="item-image-a" href="" title="">
+                          <img src="images/logo-brand-06.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="unit-item">
+                    <div class="item-inner">
+                      <div class="item-image">
+                        <a class="item-image-a" href="" title="">
+                          <img src="images/logo-brand-07.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="unit-item">
+                    <div class="item-inner">
+                      <div class="item-image">
+                        <a class="item-image-a" href="" title="">
+                          <img src="images/logo-brand-08.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="swiper-button-prev-unit"><i class="fal fa-angle-left"></i></div>
+            <div class="swiper-button-next-unit"><i class="fal fa-angle-right"></i></div>
+
+          </div>
+
+        </div>
+      </div>
+      <script>
+        domReadyQueue.push(function($){
+          var swiperUnit = new Swiper('#slide_unit', {
+              slidesPerView: 1,
+              spaceBetween: 5,
+              loop: true,
+              loopFillGroupWithBlank: false,
+              speed: 600,
+              watchOverflow: true,
+              pagination: {
+                  el: '.swiper-pagination-unit',
+                  clickable: true,
+              },
+              navigation: {
+                  nextEl: '.swiper-button-next-unit',
+                  prevEl: '.swiper-button-prev-unit',
+              },
+              breakpoints: {
+                  767: {
+                      slidesPerView: 5,
+                  },
+                  580: {
+                      slidesPerView: 4,
+                  },
+                  415: {
+                      slidesPerView: 3,
+                  },
+                  380: {
+                      slidesPerView: 1.1,
+                  }
+              }
+
+          });
+        });
+      </script> 
+    </section>
+
+
+
+
+    <section class="section-frm-contact">
+      <div class="container clearfix">
+        <div class="section-frm-contact-inner">
+          <div class="section-box-title"> 
+            <p class="title-name section-title-larger text-color-01">Đăng ký ngay hôm nay để nhận ưu đãi từ VnExpress Digital Expo</p> 
+          </div>
+          <div class="contact-form">
+            <form action="" method="post" class="form-horizontal form-register">
+              <fieldset>
+                <div class="row-frm">
+
+                  <div class="cell-frm">
+                    <div class="cell-frm-inner">
+                      <!-- Text input-->
+                      <div class="form-group row">
+                        <div class="col-sm-12">
+                          <input type="text" class="form-control" name="" id="frm_contact_name" placeholder="Họ tên" required>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group row">
+                        <div class="col-sm-12">
+                          <input type="email" class="form-control" name="" id="frm_contact_email" placeholder="Email" required>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cell-frm">
+                    <div class="cell-frm-inner">
+                      <!-- Text input-->
+                      <div class="form-group row">
+                        <div class="col-sm-12">
+                          <input type="tel" class="form-control" name="" id="frm_contact_phone" placeholder="Số điện thoại" required>
+                        </div>
+                      </div>
+                      <!-- Text input-->
+                      <div class="form-group row">
+                        <div class="col-sm-12">
+                          <select class="form-select form-control" aria-label="Đăng ký nhà tổ chức">
+                            <option selected>Đăng ký nhà tổ chức</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row-frm">
+                  <!-- Button-->
+                  <div class="form-group">
+                      <button type="submit" class="btn btn-submit fullwidth">Nhận tư vấn miễn phí</button>
+                  </div>
+                </div>
+              </fieldset>             
+            </form>
+          </div>        
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-video-live-pc clearfix">
+      <div class="container clearfix">
+        <div class="video-inner">
+          <div class="video-box-title">
+            <div class="box-title-inner">
+              <h2 class="title-name">Tin tức</h2>
+              <p class="title-sub"></p>
+            </div>
+          </div>
+          <div class="video-box-content">
+
+            <div class="slide-video-livestream" id="slide_video_livestream">
+
+                <div class="swiper-slide">
+                  <!-- 21:9 aspect ratio -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="ifrLarger" width="1280" height="720" src="https://www.youtube.com/embed/3JMToFAsWcI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="videoName" id="captionVie">Quốc hội Mỹ xác nhận Biden đắc cử Tổng thống Mỹ | VTV4</p>
+                </div>
+
+            </div>
+
+            <div class="list-thumbnai-video js_scroll_perfect">
+              <div class="item-video">
+                <a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/3JMToFAsWcI" title="Quốc hội Mỹ xác nhận Biden đắc cử Tổng thống Mỹ | VTV4">
+                  <span class="video-image">
+                    <img class="img-fluid img-responsive" src="https://i.ytimg.com/vi_webp/3JMToFAsWcI/maxresdefault.webp" alt=""> 
+                  </span>
+                  <span class="video-title">Quốc hội Mỹ xác nhận Biden đắc cử Tổng thống Mỹ | VTV4</span>
+                </a>
+              </div>
+              <div class="item-video">
+                <a href="javascript:;" class="cliVeo" data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcongdongvnexpress%2Fvideos%2F238755780561231%2F&show_text=0&autoplay=1&rel=0&showinfo=0" title="[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19 | VnExpress.net">
+                  <span class="video-image">
+                    <img class="img-fluid img-responsive" src="https://iv.vnecdn.net/vnexpress/images/web/2019/04/18/live-thumb-default-8234-1554949750_500x300.jpg" alt=""> 
+                  </span>
+                  <span class="video-title">[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19</span>
+                </a>
+              </div>
+              <div class="item-video">
+                <a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/5RubUIqyy6k" title="Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4 | VnExpress.net">
+                  <span class="video-image">
+                    <img class="img-fluid img-responsive" src="https://i.ytimg.com/vi/5RubUIqyy6k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApQ2FPz2UAgMStfoGSnr5-PqgTow" alt=""> 
+                  </span>
+                  <span class="video-title">Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4</span>
+                </a>
+              </div>
+              <div class="item-video">
+                <a href="javascript:;" class="cliVeo" data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcongdongvnexpress%2Fvideos%2F238755780561231%2F&show_text=0&autoplay=1&rel=0&showinfo=0" title="[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19 | VnExpress.net">
+                  <span class="video-image">
+                    <img class="img-fluid img-responsive" src="https://iv.vnecdn.net/vnexpress/images/web/2019/04/18/live-thumb-default-8234-1554949750_500x300.jpg" alt=""> 
+                  </span>
+                  <span class="video-title">[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19</span>
+                </a>
+              </div>
+              <div class="item-video">
+                <a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/5RubUIqyy6k" title="Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4 | VnExpress.net">
+                  <span class="video-image">
+                    <img class="img-fluid img-responsive" src="https://i.ytimg.com/vi/5RubUIqyy6k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApQ2FPz2UAgMStfoGSnr5-PqgTow" alt=""> 
+                  </span>
+                  <span class="video-title">Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4</span>
+                </a>
+              </div>
+              <div class="item-video">
+                <a href="javascript:;" class="cliVeo" data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcongdongvnexpress%2Fvideos%2F238755780561231%2F&show_text=0&autoplay=1&rel=0&showinfo=0" title="[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19 | VnExpress.net">
+                  <span class="video-image">
+                    <img class="img-fluid img-responsive" src="https://iv.vnecdn.net/vnexpress/images/web/2019/04/18/live-thumb-default-8234-1554949750_500x300.jpg" alt=""> 
+                  </span>
+                  <span class="video-title">[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19</span>
+                </a>
+              </div>
+              <div class="item-video">
+                <a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/5RubUIqyy6k" title="Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4 | VnExpress.net">
+                  <span class="video-image">
+                    <img class="img-fluid img-responsive" src="https://i.ytimg.com/vi/5RubUIqyy6k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApQ2FPz2UAgMStfoGSnr5-PqgTow" alt=""> 
+                  </span>
+                  <span class="video-title">Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4</span>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End - Content Page Area -->
+
+    @@include('templates/footer.html')
+
+
+    <!-- Start #wrap-popup-group - Group popup page - Globe -->
+    <div class="wrap-popup-page" id="wrap-popup-group">
+
+      @@include('include/popup_globe.html')
+
+    </div>
+    <!-- End #wrap-popup-group - Group popup page - Globe -->
+    
+
+    @@include('templates/scripts.html')
+
+    <!-- Start - Js Only Page Area -->
+    <!-- End - Js Only Page Area -->
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+// Start Chia cot theo flex - gap
+    @mixin gap($column,$gap) {
+        $number_gap:        $column - 1;
+        $total_gap:         #{$gap * $number_gap};
+        $clear_margin:      $total_gap / $column;
+        gap:                $gap;
+        &>div {
+            width: calc(#{percentage(1/$column)} - #{$clear_margin});
+        }
+    }
+
+    // .example {
+    //     @include gap(3,90px);
+    // }
+// End Chia cot theo flex - gutter with - space item gap (no support in IOS)
+
+
+// Start Chia cot theo flex - gutter
+    @mixin gap_2($column,$gap) {
+
+        $number_gap:        $column - 1;
+        $total_gap:         #{$gap * $number_gap};
+        $clear_margin:      $total_gap / $column;
+
+        &>* {
+            width: calc(#{percentage(1/$column)} - #{$clear_margin});
+        }
+    }
+
+    // .example {
+    //     @include gap_2(3,90px);
+    // }
+// End Chia cot theo flex - gutter
+
+
+// Start Chia cot theo flex - gutter with - space item padding
+    @mixin gap_3($column,$gap) {
+
+        $number_gap:        $column - 1;
+        $total_gap:         #{$gap * $number_gap};
+        $clear_margin:      $total_gap / $column;
+        $add_padding:       $gap / 2;
+        margin: 0 (-$add_padding);
+
+        &>* {
+            width: percentage(1/$column);
+            padding: $add_padding;
+        }
+    }
+
+    // .example {
+    //     @include gap_3(3,90px);
+    // }
+// End Chia cot theo flex - gutter
+
+
+// Start Chia cot theo flex - gutter with - space item Margin
+    @mixin gap_4($column,$gap) {
+
+        $number_gap:        $column - 1;
+        $total_gap:         #{$gap * $number_gap};
+        $clear_margin:      $total_gap / $column;
+        $add_padding:       $gap / 2;
+        $width_item:        #{percentage(1/$column)} - #{$gap};
+        margin: 0 (-$add_padding);
+
+        &>* {
+            width: calc(#{percentage(1/$column)} - #{$gap});
+            margin: $add_padding;
+        }
+    }
+
+    // .example {
+    //     @include gap_4(3,90px);
+    // }
+// End Chia cot theo flex - gutter
+
+
+/*********************
+BREAKPOINTS
+*********************/
+
+@mixin breakpoint($point) {
+    @if $point == desktop {
+        @media (min-width: 70em) { @content ; }
+    }
+    @else if $point == laptop {
+        @media (min-width: 64em) { @content ; }
+    }
+    @else if $point == tablet {
+        @media (min-width: 50em) { @content ; }
+    }
+    @else if $point == phablet {
+        @media (min-width: 37.5em)  { @content ; }
+    }
+    @else if $point == mobileonly {
+        @media (max-width: 37.5em)  { @content ; }
+    }
+}
+@include breakpoint(breakpointname) {
+    /* Styles */
+}
+
+
+
+@mixin filter_icon_white() {
+    filter: drop-shadow(1px 1px 0px #ffffff) drop-shadow(-1px -1px 0px #ffffff) drop-shadow(-1px 1px 0px #ffffff) drop-shadow(1px -1px 0px #ffffff);
+}
+
+
+
+:root {
+
+    // Primary Color
+    --color-primary-600:            #1A658F;    // 
+    --color-primary-500:            #2387BF;    // 
+    --color-primary-400:            #57AFE0;    // 
+    --color-primary-300:            #F5FCFF;    // 
+
+    // Secondary Color
+    --color-secondary-600:          #7FECFF;    // 
+    --color-secondary-500:          #9F224E;    // 
+    --color-secondary-400:          #DC5C89;    // 
+    --color-secondary-300:          #F8DEE7;    // 
+
+    // Text Dark Gray
+    --color-dark-gray-600:          #60616F;    // 
+    --color-dark-gray-500:          #9C9EA9;    // 
+    --color-dark-gray-400:          #D2D2D9;    // 
+    --color-dark-gray-300:          #F3F3F5;    // 
+
+    // Black & White
+    --color-white:                  #ffffff;
+    --color-black:                  #03121A;
+
+    // Divider
+    --color-divider:                #E4E6EB;
+
+
+    // Text primary
+    --text-color-primary-1:         #ffffff;    // Mau text đen
+
+    --black: #000000;
+    --white: #ffffff;
+}
+
+
+// Varible primary
+$text-color-primary-1: var(--text-color-primary-1);
+
+// Varible secondary
+$text-color-secondary-600: var(--color-secondary-600);
+

@@ -1,0 +1,135 @@
+<!-- File this use compress file css js - gulp useref -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="refresh" content="1800">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="robots" content="noodp,index, follow">
+	<title><!-- build:title --></title>
+	<meta name="description" content="">
+	<link rel="alternate" href="/" hreflang="vi-vn" />
+	<link rel="shortcut icon" href="images/favicon.png">
+	<meta property="og:url"			content="" />
+	<meta property="og:type"		content="website" />
+	<meta property="og:title"		content="Rao vặt" />
+	<meta property="og:description" content="Rao vặt" />
+	<meta property="og:image"		content="" />
+
+	<!--Font Quicksand-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<!--Font Montserrat-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+	<!-- build:cssOnlyPage -->
+
+	<link rel="preload" as="style" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<script type="text/javascript">
+		var domReadyQueue = [];
+	</script>
+
+	<!-- build:headOnlyPage -->
+</head>
+<body class="webViet" id="webViet_body" itemscope itemtype="http://schema.org/WebPage">
+	<div class="load"><span class="loading"></span></div>
+	<div class="space-header-fixed"></div>
+	<header class="header">		
+	</header>
+
+
+	<!-- build:content -->
+
+
+	<!-- build:footer -->
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<p>Design By Le Anh Tuan</p>
+				<p>@Copyright LAT</p>
+			</div>
+		</div>
+	</footer>
+	<span class="back-to-top-badge back-to-top-small"><i class="fal fa-angle-up"></i></span>
+	<!-- /build:footer -->
+
+
+
+	<!-- Start popup menu -->
+	<aside id="showNavSideMenu" class="modal fade modal-nav-side-menu" role="dialog">
+		<div class="modal-dialog">
+		</div>
+	</aside>
+	<!-- End popup menu -->
+
+
+	<!-- Start #wrap_popup_page - Group popup page - Globe -->
+	<div class="wrap-popup-page" id="wrap_popup_page">
+		<!-- ### Render "all html popup" to here -->
+
+		<!-- build:popup -->
+	</div>
+	<!-- End #wrap_popup_page - Group popup page - Globe -->
+
+
+
+    <!-- <script type="text/javascript" src="js/main.min.js?v=99"></script> -->
+    <script type="text/javascript" data-type="lazy" data-src="js/main.min.js"></script>
+    <script type="text/javascript" id="flying-scripts">
+        const loadScriptsTimer = setTimeout(loadScripts, 2 * 1000);
+        const userInteractionEvents = ["mouseover", "keydown", "touchstart", "touchmove", "wheel"];
+        userInteractionEvents.forEach(function(event) {
+            window.addEventListener(event, triggerScriptLoader, {
+                passive: !0
+            })
+        });
+
+        function triggerScriptLoader() {
+            loadScripts();
+            clearTimeout(loadScriptsTimer);
+            userInteractionEvents.forEach(function(event) {
+                window.removeEventListener(event, triggerScriptLoader, {
+                    passive: !0
+                })
+            })
+        }
+
+        function loadScripts() {
+            document.querySelectorAll("script[data-type='lazy']").forEach(function(elem) {
+                elem.setAttribute("src", elem.getAttribute("data-src"))
+            })
+        }
+    </script>
+	<script type="text/javascript">
+		domReadyQueue.push(function($){
+			// you code here
+		});
+	</script>
+
+
+	<!--build:js js/main.min.js -->
+	<script src="js/lib/jquery-3.4.1.min.js"></script>
+	<script src="js/lib/popper.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+	<script src="js/lib/countdown.js"></script>
+	<script src="js/lib/jquery.countdown.min.js"></script>
+	<script src="js/lib/aos.js"></script>
+	<!-- <script src="js/lib/jquery.waypoints.min.js"></script> -->
+	<script src="js/lib/jquery.countTo.js"></script>
+	<script src="js/lib/swiper.min.js"></script>
+	<script src="js/lib/perfect-scrollbar.js"></script>
+	<!-- <script src="js/lib/lightgallery-all.min.js"></script> -->
+	<script src="js/lib/jquery.magnific-popup.min.js"></script>
+	<script src="js/lib/bootbox.min.js"></script>
+	<script src="js/lib/notify.js"></script>
+	<script src="js/script-pc.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:jsOnlyPage -->
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+  <!-- Start popup menu -->
+  <div id="showNavSideMenu" class="modal fade modal-nav-side-menu" role="dialog">
+    <div class="modal-dialog">
+
+      <nav class="nav-side-menu divFadeInLeft" id="nav-side-menu">
+        <span class="btn-close-nav" data-dismiss="modal">
+          <svg viewBox="0 0 40 40"><path d="M10,10 L30,30 M30,10 L10,30" /></svg>
+        </span>
+        <div class="box-user">
+          <div class="no-login">
+            <span class="btn-sign-up" data-toggle="modal" data-target="#popup_signup">Đăng ký</span>
+            <span class="btn-sign-in" data-toggle="modal" data-target="#popup_signin" onclick="window.location.href='m.user.html'">Đăng nhập</span>
+          </div>
+          <div class="logged" style="display: none;">
+            <div class="img-user">
+              <a href="m.user.html" class="box" title="Tài khoản">
+                <img src="images/logo_vne.jpg" alt="Ảnh đại diện" class="responsive">
+              </a>
+            </div>
+            <div class="user-info">
+              <a href="m.user.html" rel="nofollow" title="Đinh Thị Phương Anh" class="user-name">Đinh Thị Phương Anh</a>
+              <div class="user-address">
+                <p class="text">
+                  <span class="fal fa-map-marker-alt"></span>
+                  Đường Mỗ Lao - Phường Mỗ Lao - Quận Hà Đông - Hà Nội
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-list">
+          <div class="group-menu">
+            <a href="m.index.html" title="Trang chủ" class="item-menu">
+              <span class="ic-menu fal fa-home"></span> TRANG CHỦ
+            </a>
+            <a href="m.category.html" title="" class="item-menu item-menu-cate">
+              <span class="ic-menu fas fa-th"></span> DANH MỤC NGÀNH HÀNG
+            </a>
+          </div>
+
+          <div class="group-menu">
+            <a href="m.user-likeproduct.html" title="" class="item-menu">
+              <span class="ic-menu fas fa-heart"></span> Sản phẩm đã thích (<i>10</i>)
+            </a>
+            <a href="m.user-notification.html" title="" class="item-menu">
+              <span class="ic-menu fal fa-bell"></span> Thông báo (<i>22</i>)
+            </a>
+            <a href="m.user-checking-order.html" title="" class="item-menu">
+              <span class="ic-menu fal fa-file-check"></span> Kiểm tra đơn hàng
+            </a>
+            <a href="m.Q-A.html" title="" class="item-menu">
+              <span class="ic-menu fal fa-life-ring"></span> Hỗ trợ khách hàng
+            </a>
+          </div>
+
+          <div class="group-menu">
+            <span class="title-group">Khuyến mãi</span>
+            <a href="m.gift.html" title="" class="item-menu">
+              <span class="ic-menu fal fa-gift"></span> Ưu đãi quà tặng
+            </a>
+            <!-- <a href="m.brand.html" title="" class="item-menu">
+              <span class="ic-menu fal fa-medal"></span> Thương hiệu nổi bật
+            </a> -->
+            <a href="m.ve-may-bay.html" title="" class="item-menu">
+              <span class="ic-menu icon-plane">
+                <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.95315 15.7893L4.95207 15.787L3.7759 13.2621C3.77167 13.2503 3.77694 13.2373 3.78812 13.2317C3.78829 13.2316 3.78847 13.2315 3.78865 13.2315L4.67178 12.8242L5.71107 12.3449L4.65325 11.908L0.527108 10.2039L0.527167 10.2038L0.515554 10.1993C0.508775 10.1967 0.504049 10.1917 0.501844 10.1857L0.501424 10.1845C0.499209 10.1785 0.499611 10.1719 0.502402 10.1663L1.88805 7.67196C1.88815 7.67177 1.88826 7.67158 1.88838 7.67139C1.89408 7.66186 1.90476 7.65761 1.91455 7.65973C1.91477 7.65978 1.91499 7.65983 1.9152 7.65988L7.48491 9.07472L7.65927 9.11901L7.82189 9.04206L11.1457 7.46916L11.9311 7.09745L11.215 6.60518L5.41327 2.61688C5.41314 2.61679 5.41302 2.6167 5.41289 2.61662C5.40646 2.61199 5.40297 2.60537 5.40239 2.59857C5.39463 2.10435 5.61028 1.63333 5.98888 1.31652C6.39187 1.03369 7.04316 0.970066 8.05279 1.34975L16.6689 4.71979L16.8688 4.79801L17.0633 4.70684L25.0798 0.947821L25.0798 0.947886L25.0874 0.944179C25.8833 0.554445 26.779 0.416573 27.6554 0.548847L27.663 0.549991L27.6706 0.550902C28.3816 0.636003 29.0038 1.06883 29.3307 1.7053C29.5993 2.28495 29.5479 2.97382 29.1776 3.65474C28.8045 4.34064 28.1163 4.9935 27.1778 5.43137C27.1778 5.43138 27.1778 5.43139 27.1778 5.4314L20.2312 8.67173L20.0373 8.76218L19.9688 8.96488L16.4628 19.3468C16.4625 19.3474 16.4623 19.348 16.4621 19.3486C16.1038 20.3784 15.6308 20.8335 15.143 20.9615C15.0506 20.9849 14.9562 20.9971 14.8613 20.9978C14.4734 20.9832 14.1008 20.843 13.7998 20.598C13.7958 20.5933 13.7937 20.5869 13.7943 20.5799C13.7943 20.5799 13.7943 20.5799 13.7943 20.5798L14.6016 12.1398L14.6849 11.2689L13.8922 11.6392L4.9833 15.8004C4.97946 15.802 4.97663 15.8023 4.97503 15.8022V15.8022H4.9707C4.96893 15.8022 4.967 15.802 4.96514 15.8015C4.95995 15.799 4.95559 15.7946 4.95315 15.7893ZM5.48194 2.28211L5.43925 2.58864L5.69457 2.76355L11.7555 6.9158L11.991 7.07715L12.2496 6.95634L15.752 5.32056L16.8105 4.82621L15.7221 4.40171L8.04648 1.40796L8.0465 1.40792L8.03997 1.40547C7.64772 1.25875 7.27759 1.16612 6.94562 1.14723C6.6179 1.12859 6.27695 1.17961 5.99992 1.37891L5.98567 1.38916L5.97217 1.40038C5.70448 1.62304 5.52994 1.93741 5.48194 2.28211ZM0.823126 9.67633L0.54648 10.1676L1.06734 10.3835L5.75139 12.3252C5.75906 12.3294 5.76399 12.3374 5.76399 12.3465C5.76399 12.356 5.75843 12.3647 5.74934 12.3687L5.74929 12.3686L5.73909 12.3734L4.26093 13.0653L3.80747 13.2775L4.02034 13.7307L4.75917 15.3036L4.97113 15.7549L5.42299 15.5442L14.42 11.3499L14.679 11.2292L14.7064 10.9448L14.8688 9.26187L14.8689 9.26128C14.8703 9.24616 14.8836 9.23591 14.8974 9.23724L14.898 9.2373C14.9128 9.23869 14.9234 9.25158 14.922 9.26619L13.8734 20.2762L13.8442 20.5831L14.1052 20.747C14.4021 20.9335 14.7594 21.0016 15.1053 20.9349L15.122 20.9317L15.1384 20.9274C15.4669 20.8407 15.7223 20.613 15.9167 20.3503C16.1131 20.0847 16.2775 19.7437 16.4156 19.3519L16.4156 19.3519L16.418 19.3449L20.7329 6.50531L20.7336 6.50338C20.7393 6.48623 20.758 6.47662 20.7756 6.48245C20.7926 6.48818 20.8018 6.5066 20.7965 6.52332C20.7965 6.5235 20.7964 6.52367 20.7963 6.52384L20.4301 7.60687L20.0546 8.71735L21.116 8.21977L27.1546 5.3889C27.1547 5.38884 27.1549 5.38879 27.155 5.38873C27.9642 5.01165 28.6239 4.43558 29.0244 3.79785C29.419 3.16941 29.6028 2.40309 29.2844 1.72016L29.2762 1.70256L29.2667 1.68566C28.9235 1.07751 28.3056 0.67471 27.6108 0.606444C26.7515 0.485729 25.8755 0.62607 25.097 1.00888L7.67377 9.14682C7.67348 9.14696 7.67319 9.14708 7.67289 9.1472C7.66757 9.14941 7.66209 9.14971 7.65702 9.14843L7.65493 9.14791L2.29149 7.81637L1.92209 7.72466L1.73534 8.05631L0.823126 9.67633Z" stroke="#818385"/>
+                </svg>
+              </span> Vé máy bay
+            </a>
+          </div>
+
+          <div class="group-menu">
+            <span class="title-group">ĐỐI TÁC BÁN HÀNG</span>
+            <a href="m.chinh-sach-quy-che-hoat-dong.html" title="" class="item-menu">
+              <span class="ic-menu fal fa-briefcase"></span> Quy chế & Điều khoản
+            </a>
+            <a href="m.hop-tac-ban-hang.html" title="" class="item-menu">
+              <span class="ic-menu fal fa-handshake"></span> Hợp tác bán hàng
+            </a>
+          </div>
+
+          <div class="group-menu">
+            <span class="title-group">HỖ TRỢ VÀ CÀI ĐẶT</span>
+            <a href="https://vnexpress.net" title="" class="item-menu">
+              <span class="ic-menu icon_bao_vne"></span> Đọc báo VNExpress
+            </a>
+            <a href="tel:1900633376" title="" class="item-menu">
+              <span class="ic-menu fal fa-phone"></span> Hotline : <strong>19001900</strong>
+            </a>
+            <a href="" title="" class="item-menu" data-toggle="modal" data-target="#popup_signout">
+              <span class="ic-menu fal fa-sign-out"></span> Đăng xuất
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- End popup menu -->
