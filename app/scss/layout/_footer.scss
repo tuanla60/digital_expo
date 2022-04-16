@@ -42,7 +42,8 @@ footer.footer {
 					&.col-secondary {
 						@media (min-width: 992px) {
 							.col-inner {
-								align-items: flex-end;
+								align-items: flex-start;
+
 							}
 						}
 					}
@@ -51,7 +52,7 @@ footer.footer {
 						height: 100%;
 						display: flex;
 						flex-direction: column;
-						justify-content: space-between;
+						justify-content: center;
 					}
 
 					.content-col {

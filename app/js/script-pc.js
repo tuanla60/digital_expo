@@ -1,3 +1,4 @@
+
 function showMenu() {
     var wrapper = $('html'),
         a = document.getElementById("body_area"),

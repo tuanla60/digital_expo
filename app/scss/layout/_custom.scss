@@ -1,0 +1,250 @@
+.section-block {
+    padding: 60px 0;
+}
+.section-block-bg {
+    padding: 80px 0 100px;
+    // background: url(images/backgrounds/bg-form-register.png) no-repeat center top;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-position: bottom;
+    background-size: 75%;
+
+    @media (max-width: 768px) {
+        background-size: 125%;
+    }
+}
+.section-text-content {
+    font-weight: 300;
+    font-size: 17px;
+}
+.heading-title {
+    .title-name {
+        font-size: 32px;
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
+    }
+}
+.help-text-info__text {
+    font-weight: 300;
+    font-size: 17px;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+.line-bottom {
+    border-bottom: 1.5px solid #7fecff;
+    width: 50%;
+    margin: 30px auto;
+}
+.btn-main {
+    // position: relative;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    padding: 11px 40px;
+    transition: filter 0.3s ease;
+    min-width: 170px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &__rounded {
+        border-radius: 50px;
+    }
+
+    &:hover {
+        filter: brightness(110%);
+        color: #000;
+    }
+    &__primary {
+        background-color: #7fecff;
+        color: #000;
+        &:hover {
+            background-color: #40A9FF;
+            transition: background-color ease .4s;
+        }
+    }
+    &__line {
+        border: 1px solid #7fecff;
+        color: #7fecff;
+    }
+    &__line:hover {
+        background-color: #7fecff;
+        color: #fff;
+    }
+    &--disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+    &__fullwidth {
+        width: 100%;
+    }
+    & + & {
+        margin-left: 15px;
+    }
+}
+.card-info {
+    line-height: 1.8;
+    // margin: 1rem;
+
+    &__body {
+        display: flex;
+        padding: 20px;
+        color: #fff;
+        flex-wrap: nowrap;
+        @media (max-width: 768px) {
+            padding: 3px;
+            flex-wrap: wrap;
+        }
+    }
+    &__icon {
+        font-size: 40px;
+        margin: 0 10px 10px 10px;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 550;
+        color: #7fecff;
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        @media (max-width: 768px) {
+            font-size: 13px;
+        }
+    }
+}
+
+.card-pricing {
+    text-align: left;
+    padding: 15px 10px;
+    margin: 0;
+    height: 100%;
+    width: calc(100% / 3.2);
+    z-index: 9;
+    //  background: rgba(255, 255, 255, 0.5);
+    background: rgba(100, 39, 201, 0.3);
+    backdrop-filter: blur(10px);
+
+    @media (max-width: 1023px) {
+        width: 100%;
+        height: auto;
+        z-index: 30;
+    }
+    &__type {
+        font-weight: 550;
+        margin: 20px 0;
+        font-size: 20px;
+        position: relative;
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+    &__type::after {
+        position: absolute;
+        content: "";
+        width: 80px;
+        border-bottom: 2px solid #7fecff;
+        left: 0;
+        bottom: -10px;
+    }
+    &__list {
+        list-style-type: disc;
+        font-size: 14px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0 0 0 10px;
+        li {
+            margin: 0;
+        }
+    }
+}
+.line-benefit-section {
+    height: 100%;
+    width: 20px;
+    background-color: #000;
+    z-index: 10;
+    @media (max-width: 1023px) {
+        width: 100%;
+        height: 20px;
+        z-index: 30;
+    }
+}
+
+.benefit-section-list {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    min-height: 483px;
+    // background: #3d0b55;
+    // backdrop-filter: blur(30px);
+
+    position: relative;
+    overflow: hidden;
+    z-index: 6;
+
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: -80%;
+        left: 0;
+        width: 100%;
+        height: 130%;
+        z-index: 10;
+        background: url(../images/the-iron-ball.png) no-repeat center;
+        background-size: 60%;
+        @media (max-width: 1023px) {
+            // bottom: unset;
+            // left: unset;
+            // right: -65%;
+            // top: -18%;
+            // background-size: 100%;
+            background: none;
+        }
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        background: url(../images/the-iron-ball.png) no-repeat fixed;
+        background-position: right;
+        background-size: 500px;
+        @media (min-width: 1680px) {
+            top: 0;
+            right: 0;
+            background-size: 500px;
+            background-position: top;
+        }
+    }
+}
+
+.hide-on-mobile {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+.hide-on-tablet {
+    @media (min-width: 769px) and (max-width: 1023px) {
+        display: none;
+    }
+}
+.hide-on-pc {
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}

@@ -139,6 +139,7 @@
                 }
             }
         }
+        
     }
     .nav-link {
         padding: 10px 16px;
@@ -156,6 +157,10 @@
             transition: 200ms ease-in-out;
         }
     }
+    .nav-item-hightlight {
+            // background-color: #7FECFF;
+            // border-radius: 30%;
+        }
     .link-light {
         color: #ffffff;
     }
