@@ -41,7 +41,10 @@
 		}
 		.wrap-item-img {
 			position: relative;
-			text-align: rigßßht;
+			text-align: right;
+			@media (max-width: 768px) {
+				text-align: center;
+				}
 
 			&:hover {
 				img {
@@ -596,6 +599,12 @@
 			bottom: 0;
 			left: 0;
 			right: 0;
+			@media (max-width: 1024px) and (min-width: 769){
+				left: -15%;
+			}
+			@media (max-width: 768px){
+				left: -45%;
+			}
 		}
 		.title-name {
 			position: relative;

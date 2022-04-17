@@ -19,6 +19,9 @@ body {
 
     --text: var(--white);
     --background: var(--black);
+    @media (max-width: 768px) {
+        overflow-x: hidden;
+    }
 
     &.light {
         --text: var(--black);
