@@ -129,19 +129,22 @@
     margin: 0;
     height: 100%;
     width: calc(100% / 3.2);
-    z-index: 9;
+    z-index: 1;
     //  background: rgba(255, 255, 255, 0.5);
     background: rgba(100, 39, 201, 0.3);
-    backdrop-filter: blur(10px);
+    // backdrop-filter: blur(10px);
 
+    @media (min-width: 992px) {
+        padding: 20px 20px 15px;
+    }
     @media (max-width: 1023px) {
         width: 100%;
         height: auto;
         z-index: 30;
     }
     &__type {
-        font-weight: 550;
-        margin: 20px 0;
+        font-weight: 500;
+        margin: 0 0 30px;
         font-size: 20px;
         position: relative;
         @media (max-width: 768px) {
@@ -152,16 +155,16 @@
         position: absolute;
         content: "";
         width: 80px;
-        border-bottom: 2px solid #7fecff;
+        border-bottom: 1px solid #7FECFF;
         left: 0;
-        bottom: -10px;
+        bottom: -12px;
     }
     &__list {
         list-style-type: disc;
         font-size: 14px;
         font-weight: 300;
         margin: 0;
-        padding: 0 0 0 10px;
+        padding: 0 0 0 17px;
         li {
             margin: 0;
         }
@@ -201,16 +204,19 @@
         left: 0;
         width: 100%;
         height: 130%;
-        z-index: 10;
-        background: url(../images/the-iron-ball.png) no-repeat center;
-        background-size: 60%;
-        @media (max-width: 1023px) {
+        z-index: 2;
+        background: none;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 55%;
+        pointer-events: none;
+        @media (min-width: 1024px) {
             // bottom: unset;
             // left: unset;
             // right: -65%;
             // top: -18%;
             // background-size: 100%;
-            background: none;
+            background-image: url(../images/the-iron-ball.png);
         }
     }
     &::after {
@@ -218,17 +224,19 @@
         content: "";
         top: 0;
         right: 0;
-        z-index: 5;
-        width: 100%;
+        z-index: 3;
+        width: 416px;
         height: 100%;
-        background: url(../images/the-iron-ball.png) no-repeat fixed;
-        background-position: right;
-        background-size: 500px;
-        @media (min-width: 1680px) {
-            top: 0;
-            right: 0;
-            background-size: 500px;
-            background-position: top;
+        background: url(../images/the-iron-ball.png);
+        background-repeat: no-repeat;
+        background-position: center right -300px;
+        background-attachment: fixed;
+        pointer-events: none;
+        @media (min-width: 575px) {
+            background-attachment: unset;
+        }
+        @media (min-width: 1024px) {
+            background: none;
         }
     }
 }

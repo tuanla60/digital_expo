@@ -30,6 +30,14 @@ function showMenu() {
 }
 
 $(document).ready(function() {
+    $('.section-banner-area .title-banner').tilt();
+    // $('.section-banner-area .animate-floating').tilt({
+    //     reset: false
+    // });
+    $('.card-info__icon img').tilt({
+        glare: true,
+        maxGlare: .5
+    });
 
     $('[data-toggle="tooltip"]').tooltip();   
 
@@ -37,10 +45,12 @@ $(document).ready(function() {
         if ($(this).scrollTop() > 100) $('#goTop').fadeIn();
         else $('#goTop').fadeOut();
     });
-    $('#goTop').click(function() {
-        $('body,html').animate({
+            
+    $(document).on('click','#to_top, .back-to-top-badge, .btn-go-top, #goTop', function (e){
+        e.preventDefault();
+        $("html,body").animate({
             scrollTop: 0
-        }, 'slow');
+        },'slow');
         return false;
     });
 
@@ -88,9 +98,53 @@ $(document).ready(function() {
     
 
     checkScroll();
-    $(window).scroll(checkScroll);
+    checkScrollGoTop();
+    $(window).scroll(checkScroll,checkScrollGoTop);
 
 });
+
+
+/* Start scroll go top js
+============================================================================================ */
+var prevScrollpos = window.pageYOffset;
+function checkScrollGoTop() {
+
+    // Start effect fade in btn-go-top
+        if ($(this).scrollTop() <= 500) {
+            $('.scroll-to-top').fadeOut();
+        } else {
+            $('.scroll-to-top').fadeIn();
+        }
+
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            $('#to_top').fadeIn('300');
+            document.querySelector("#to_top").style.opacity = "1";
+        } else {
+            document.querySelector("#to_top").style.opacity = "0";
+            $('#to_top').fadeOut('fast');
+        }
+        prevScrollpos = currentScrollPos;
+    // End effect fade in btn-go-top
+
+
+    // var total_scroll_height = document.body.scrollHeight;
+    // var inside_header = ($(this).scrollTop() <= 400);
+    // var passed_header = ($(this).scrollTop() >= 0);
+    // if ($(this).scrollTop() > 600) {
+    //     $('.back-to-top-badge').fadeIn();
+    // } else {
+    //     $('.back-to-top-badge').fadeOut();
+    // }
+
+    // var total_scroll_height = document.body.scrollHeight;
+    // var footer_reached = ($(this).scrollTop() >= (total_scroll_height - ($(window).height() + 300)));
+    // if (footer_reached === true) {
+    //     $('.back-to-top-badge').removeClass('back-to-top-badge-visible');
+    // }
+}
+/* End scroll go top js
+============================================================================================ */
 
 function checkScroll(){
     if($('.header.header-scroll')[0] && $(window).width()>1200){
@@ -156,7 +210,28 @@ function scrollToId(id){
     // $(this).addClass("active");
 };
 
+
+/* Start counterUp Number Area js
+============================================================================================ */
+function _counterUp() {
+    var items_couter_up = $('.js_counters_up .js_item_counter');
+    if (items_couter_up[0]) {
+        items_couter_up.each(function() {
+            var e = $(this).attr('data-to');
+            $(this).delay(3e3).countTo({
+                from: 1,
+                to: e,
+                speed: 3500,
+                refreshInterval: 50
+            });
+        });
+    }
+}
+/* End counterUp Number Area js
+============================================================================================ */
+
 jQuery(function($) {
+    _counterUp();
 
     $('.back-to-top-badge').on("click", function(e) {
         e.preventDefault();
@@ -229,6 +304,6 @@ jQuery(function(){
 
 /*!---------------------------------
 @File: Script Layout Digital Expo
-@Update time: 2022-04-13-17h45
+@Update time: 2022-04-18-18h00
 @Feedback: tuanla60@fpt.com.vn
 ----------------------------------- */
