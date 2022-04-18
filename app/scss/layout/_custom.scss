@@ -248,3 +248,10 @@
         display: none;
     }
 }
+
+
+
+.swal2-container.swal2-backdrop-show, 
+.swal2-container.swal2-noanimation {
+    backdrop-filter: blur(10px);
+}

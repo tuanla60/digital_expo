@@ -52,7 +52,7 @@ $(document).ready(function() {
 
         if($('.box-nav-top')) {
             $('html,body').animate({
-                scrollTop: $(id).offset().top
+                scrollTop: $(id).offset().top-80
             });
         }
     });

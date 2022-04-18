@@ -107,3 +107,4 @@ package-lock.json
 jshint-output.html
 readme.txt
 sitemap.html
+*.DS_Store

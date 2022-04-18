@@ -141,8 +141,9 @@ gulp.task('js', function() {
       // 'app/js/lib/dragscroll.js', // Drag mouse scroll _ page brand
       // 'app/js/lib/jquery.magnific-popup.min.js',
       // 'app/js/lib/bootbox.min.js',
-      // 'app/js/lib/sweetalert2.all.min.js',
+      'app/js/lib/sweetalert2.all.min.js',
       // 'app/js/lib/notify.js',
+      'app/js/form.js',
       'app/js/script-pc.js',
     ])
     .pipe(sourcemaps.init())

@@ -11,23 +11,20 @@
 
 <body class="body_area" id="body_area">
 
-  @@include('templates/header.html', { "marquee": true })
+  @@include('templates/header.html')
 
   <!-- Start - Content Page Area -->
 
-
-  <section class="section-banner-area" id="home-section">
+  <!-- Start Intro - Banner Area -->
+  <section class="section-banner-area" id="Gioi_thieu">
     <div class="container clearfix">
       <div class="row">
         <div class="area-inner">
           <div class="col-md-6 col-sm-12">
             <div class="wrap-item-text">
-              <h1 class="title-banner">VnExpress <span class="d-inline-block">Digital <span
-                    class="text-color-primary">Expo</span> 2022</span></h1>
-              <p class="content-banner">Giải pháp kết hợp mạnh mẽ giữa công nghệ và truyền thông Nâng tầm chiến lược
-                truyền thông thương hiệu khác biệt - hiệu quả</p>
-              <!-- <a href="#" title="" class="btn-readmore">Trải nghiệm ngay</a> -->
-              <a href="#" class="btn-main btn-main__rounded btn-main__primary">
+              <h1 class="title-banner">VnExpress <span class="d-inline-block">Digital <span class="text-color-primary">Expo</span> 2022</span></h1>
+              <p class="content-banner">Giải pháp kết hợp mạnh mẽ giữa công nghệ và truyền thông Nâng tầm chiến lược truyền thông thương hiệu khác biệt - hiệu quả</p>
+              <a href="#Lien_he" class="btn-main btn-main__rounded btn-main__primary">
                 <i class="fas fa-caret-right"></i>
                 Trải nghiệm triển lãm
               </a>
@@ -48,8 +45,10 @@
 
     </div>
   </section>
+  <!-- End Intro - Banner Area -->
 
-  <!-- Card - info Statistical -->
+
+  <!-- Start Number Fun Area -->
   <section class="section-block">
     <div class="container">
       <div class="row">
@@ -116,18 +115,17 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-9">
-          <p class="section-text-content text-center hide-on-mobile">Là nền tảng mô phỏng các gian hàng bằng hình ảnh
-            3D, bao gồm các hoạt động
-            tổ chức sự kiện, hội thảo, đầu tư, quảng bá, thương mại hóa,... cho phép khách
-            tham quan và doanh nghiệp thực hiện giao thương ngay trên nền tảng.
-          </p>
+          <p class="section-text-content text-center hide-on-mobile">Là nền tảng mô phỏng các gian hàng bằng hình ảnh 3D, bao gồm các hoạt động tổ chức sự kiện, hội thảo, đầu tư, quảng bá, thương mại hóa,... cho phép khách tham quan và doanh nghiệp thực hiện giao thương ngay trên nền tảng. </p>
           <div class="line-bottom hide-on-mobile"></div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Start Home New Area -->
-  <section class="section-slide-home-area clearfix" id="techonogy-section">
+  <!-- End Number Fun Area -->
+
+
+  <!-- Start Sử dụng công nghệ hàng đầu Area -->
+  <section class="section-slide-home-area clearfix" id="Cong_nghe">
     <div class="container clearfix">
       <div class="area-box-title">
         <h2 class="title-name section-title-larger text-color-01">Sử dụng công nghệ hàng đầu</h2>
@@ -157,7 +155,7 @@
                         Hiển thị gian hàng 1 cách trực quan
                       </a>
                     </h3>
-                    <a href="#" title="" class="btn-readmore">Trải nghiệm ngay</a>
+                    <a href="#Lien_he" title="Trải nghiệm ngay" class="btn-readmore">Trải nghiệm ngay</a>
                   </div>
                 </div>
               </div>
@@ -176,7 +174,7 @@
                         Hiển thị gian hàng 1 cách trực quan
                       </a>
                     </h3>
-                    <a href="#" title="" class="btn-readmore">Trải nghiệm ngay</a>
+                    <a href="#Lien_he" title="Trải nghiệm ngay" class="btn-readmore">Trải nghiệm ngay</a>
                   </div>
                 </div>
               </div>
@@ -195,7 +193,7 @@
                         Hiển thị gian hàng 1 cách trực quan
                       </a>
                     </h3>
-                    <a href="#" title="" class="btn-readmore">Trải nghiệm ngay</a>
+                    <a href="#Lien_he" title="Trải nghiệm ngay" class="btn-readmore">Trải nghiệm ngay</a>
                   </div>
                 </div>
               </div>
@@ -214,7 +212,7 @@
                         Hiển thị gian hàng 1 cách trực quan
                       </a>
                     </h3>
-                    <a href="#" title="" class="btn-readmore">Trải nghiệm ngay</a>
+                    <a href="#Lien_he" title="Trải nghiệm ngay" class="btn-readmore">Trải nghiệm ngay</a>
                   </div>
                 </div>
               </div>
@@ -232,9 +230,8 @@
       </div>
     </div>
 
-
     <script>
-      domReadyQueue.push(function ($) {
+      domReadyQueue.push(function($) {
         var slide_news = new Swiper('#slide_gallery', {
           slidesPerView: 1,
           slidesPerColumn: 1,
@@ -267,9 +264,11 @@
       });
     </script>
   </section>
+  <!-- End Sử dụng công nghệ hàng đầu Area -->
 
-  <!-- Benefit Section-->
-  <section class="section-block" id="benefit-section">
+
+  <!-- Start Lợi ích khi tham gia Area -->
+  <section class="section-block" id="Loi_ich">
     <div class="container">
       <div class="heading-title text-center">
         <h1 class="title-name section-title-larger text-color-01">Lợi ích khi tham gia</h1>
@@ -283,7 +282,7 @@
               <h3 class="card-pricing__type">Đối với khách tham quan</h3>
               <ul class="card-pricing__list">
                 <li>Tham quan cùng lúc nhiều gian hàng</li>
-                <li>Trãi nghiệm triển lãm mọi lúc, mọi nơi trên thiết bị di động thông minh</li>
+                <li>Trải nghiệm triển lãm mọi lúc, mọi nơi trên thiết bị di động thông minh</li>
                 <li>Lựa chọn nhiều hình thức tham quan theo nhu cầu </li>
               </ul>
             </div>
@@ -315,7 +314,7 @@
               <h3 class="card-pricing__type">Đối với khách tham quan</h3>
               <ul class="card-pricing__list">
                 <li>Tham quan cùng lúc nhiều gian hàng</li>
-                <li>Trãi nghiệm triển lãm mọi lúc, mọi nơi trên thiết bị di động thông minh</li>
+                <li>Trải nghiệm triển lãm mọi lúc, mọi nơi trên thiết bị di động thông minh</li>
                 <li>Lựa chọn nhiều hình thức tham quan theo nhu cầu </li>
               </ul>
             </div>
@@ -349,9 +348,7 @@
         <div class="col-md-8">
           <div class="text-center help-text-info">
             <h4 class="heading-title__title">Tiếp cận được nhiều khách tiềm năng, nâng cao uy tín</h4>
-            <p class="help-text-info__text">Đồng hành với VnExpres Digital Expo để có cơ hội tiếp cận được nhiều khác
-              hàng
-              tiềm năng đến từ nhiều triệu bạn đọc của VnExpres và nang cao uy tín của thương hiêu.</p>
+            <p class="help-text-info__text">Đồng hành với VnExpres Digital Expo để có cơ hội tiếp cận được nhiều khác hàng tiềm năng đến từ nhiều triệu bạn đọc của VnExpres và nang cao uy tín của thương hiêu.</p>
             <a href="#" class="btn-main btn-main__rounded btn-main__primary">
               <i class="fas fa-caret-right"></i>
               Tư vấn ngay
@@ -361,8 +358,11 @@
       </div>
     </div>
   </section>
-  <!-- Start Home New Area -->
-  <section class="section-slide-home-area clearfix" id="events-section">
+  <!-- End Lợi ích khi tham gia Area -->
+
+
+  <!-- Start Các sự kiện đã diễn ra Area -->
+  <section class="section-slide-home-area clearfix" id="Su_kien">
     <div class="container clearfix">
       <div class="area-box-title">
         <h2 class="title-name section-title-larger text-color-01">Các sự kiện đã diễn ra</h2>
@@ -485,7 +485,7 @@
 
 
     <script>
-      domReadyQueue.push(function ($) {
+      domReadyQueue.push(function($) {
         var slide_news = new Swiper('#slide_news', {
           slidesPerView: 1,
           slidesPerColumn: 1,
@@ -518,10 +518,11 @@
       });
     </script>
   </section>
-  <!-- End Home New Area -->
+  <!-- End Các sự kiện đã diễn ra Area -->
 
 
-  <section class="section-block section-unit clearfix" id="parners-section">
+  <!-- Start Các thương hiệu đã hợp tác Area -->
+  <section class="section-block section-unit clearfix" id="Doi_tac">
     <div class="container clearfix">
       <div class="unit-inner">
         <div class="unit-box-title">
@@ -631,7 +632,7 @@
       </div>
     </div>
     <script>
-      domReadyQueue.push(function ($) {
+      domReadyQueue.push(function($) {
         var swiperUnit = new Swiper('#slide_unit', {
           slidesPerView: 1,
 
@@ -679,19 +680,18 @@
       });
     </script>
   </section>
+  <!-- End Các thương hiệu đã hợp tác Area -->
 
 
-
-
-  <section class="section-frm-contact" style="background-image: url(images/backgrounds/bg-form-register.png)" id="contact-section">
+  <!-- Start Form Đăng ký Area -->
+  <section class="section-frm-contact" style="background-image: url(images/backgrounds/bg-form-register.png)" id="Lien_he">
     <div class="container clearfix">
       <div class="section-frm-contact-inner">
         <div class="section-box-title">
-          <p class="title-name section-title-larger text-color-01">Đăng ký ngay hôm nay để nhận ưu đãi từ VnExpress
-            Digital Expo</p>
+          <p class="title-name section-title-larger text-color-01">Đăng ký ngay hôm nay để nhận ưu đãi từ VnExpress Digital Expo</p>
         </div>
         <div class="contact-form">
-          <form action="" method="post" class="form-horizontal form-register">
+          <form id="form-contact" method="post" autocomplete="on" onsubmit="return false;" class="form-horizontal form-register">
 
             <fieldset class="contact-form-border">
               <!-- <legend>Đăng ký ngay hôm nay để nhận ưu đãi từ VnExpress Digital Expo</legend> -->
@@ -702,15 +702,13 @@
                     <!-- Text input-->
                     <div class="form-group row">
                       <div class="col-sm-12">
-                        <input type="text" class="form-control" name="" id="frm_contact_name" placeholder="Họ tên"
-                          required>
+                        <input type="text" class="form-control" name="fullname" id="frm_contact_name" placeholder="Họ tên" required>
                       </div>
                     </div>
                     <!-- Text input-->
                     <div class="form-group row">
                       <div class="col-sm-12">
-                        <input type="email" class="form-control" name="" id="frm_contact_email" placeholder="Email"
-                          required>
+                        <input type="email" class="form-control" name="email" id="frm_contact_email" placeholder="Email" required>
                       </div>
                     </div>
                   </div>
@@ -720,18 +718,17 @@
                     <!-- Text input-->
                     <div class="form-group row">
                       <div class="col-sm-12">
-                        <input type="tel" class="form-control" name="" id="frm_contact_phone"
-                          placeholder="Số điện thoại" required>
+                        <input type="tel" class="form-control f-number" name="phone" id="frm_contact_phone" placeholder="Số điện thoại" required>
                       </div>
                     </div>
                     <!-- Text input-->
                     <div class="form-group row">
                       <div class="col-sm-12">
-                        <select class="form-select form-control" aria-label="Đăng ký nhà tổ chức">
-                          <option selected>Đăng ký nhà tổ chức</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                        <select type="select" name="organizers" id="frm_contact_phone_organizers" class="form-select form-control" aria-label="Đăng ký nhà tổ chức">
+                          <option value="" selected>Đăng ký nhà tổ chức</option>
+                          <option value="Nhà tổ chức 1">Nhà tổ chức 1</option>
+                          <option value="Nhà tổ chức 2">Nhà tổ chức 2</option>
+                          <option value="Nhà tổ chức 3">Nhà tổ chức 3</option>
                         </select>
                       </div>
                     </div>
@@ -742,10 +739,9 @@
               <!-- <div class="row-frm"> -->
               <!-- Button-->
               <!-- <div class="form-group"> -->
-              <button type="submit" class="btn-main btn-main__rounded btn-main__primary btn-main__fullwidth">
+              <button type="submit" class="btn-main btn-main__rounded btn-main__primary btn-main__fullwidth btn_send">
                 Trải nghiệm triển lãm
               </button>
-              <!-- <button type="submit" class="btn btn-submit fullwidth">Nhận tư vấn miễn phí</button> -->
               <!-- </div> -->
               <!-- </div> -->
             </fieldset>
@@ -754,9 +750,11 @@
       </div>
     </div>
   </section>
+  <!-- End Form Đăng ký Area -->
 
 
-  <section class="section-video-live-pc clearfix">
+  <!-- Start Tin tức Area -->
+  <section class="section-video-live-pc clearfix" id="Tin_tuc">
     <div class="container clearfix">
       <div class="video-inner">
         <div class="video-box-title">
@@ -772,25 +770,21 @@
             <div class="swiper-slide">
               <!-- 21:9 aspect ratio -->
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe id="ifrLarger" width="1280" height="720" src="https://www.youtube.com/embed/3JMToFAsWcI"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+                <iframe id="ifrLarger" width="1280" height="720" src="https://www.youtube.com/embed/3JMToFAsWcI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <p class="videoName" id="captionVie">Quốc hội Mỹ xác nhận Biden đắc cử Tổng thống Mỹ | VTV4</p>
               <div class="video-livestream-info"><span class="video-livestream-info__viewer">20.000</span> lượt xem
-                <span> &#9679; </span> <span class="video-livestream-info__date"> 22 Thg 12, 2022</span></div>
+                <span> &#9679; </span> <span class="video-livestream-info__date"> 22 Thg 12, 2022</span>
+              </div>
             </div>
 
           </div>
 
           <div class="list-thumbnai-video js_scroll_perfect">
             <div class="item-video">
-              <a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/3JMToFAsWcI"
-                title="Quốc hội Mỹ xác nhận Biden đắc cử Tổng thống Mỹ | VTV4">
+              <a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/3JMToFAsWcI" title="Quốc hội Mỹ xác nhận Biden đắc cử Tổng thống Mỹ | VTV4">
                 <span class="video-image">
-                  <img class="img-fluid img-responsive" src="https://i.ytimg.com/vi_webp/3JMToFAsWcI/maxresdefault.webp"
-                    alt="">
+                  <img class="img-fluid img-responsive" src="https://i.ytimg.com/vi_webp/3JMToFAsWcI/maxresdefault.webp" alt="">
                 </span>
                 <!-- <span class="item-video__info"> -->
                 <span class="video-title">Quốc hội Mỹ xác nhận Biden đắc cử Tổng thống Mỹ | VTV4</span>
@@ -800,70 +794,49 @@
               </a>
             </div>
             <div class="item-video">
-              <a href="javascript:;" class="cliVeo"
-                data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcongdongvnexpress%2Fvideos%2F238755780561231%2F&show_text=0&autoplay=1&rel=0&showinfo=0"
-                title="[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19 | VnExpress.net">
+              <a href="javascript:;" class="cliVeo" data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcongdongvnexpress%2Fvideos%2F238755780561231%2F&show_text=0&autoplay=1&rel=0&showinfo=0" title="[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19 | VnExpress.net">
                 <span class="video-image">
-                  <img class="img-fluid img-responsive"
-                    src="https://iv.vnecdn.net/vnexpress/images/web/2019/04/18/live-thumb-default-8234-1554949750_500x300.jpg"
-                    alt="">
+                  <img class="img-fluid img-responsive" src="https://iv.vnecdn.net/vnexpress/images/web/2019/04/18/live-thumb-default-8234-1554949750_500x300.jpg" alt="">
                 </span>
                 <span class="video-title">[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19</span>
               </a>
             </div>
             <div class="item-video">
-              <a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/5RubUIqyy6k"
-                title="Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4 | VnExpress.net">
+              <a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/5RubUIqyy6k" title="Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4 | VnExpress.net">
                 <span class="video-image">
-                  <img class="img-fluid img-responsive"
-                    src="https://i.ytimg.com/vi/5RubUIqyy6k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApQ2FPz2UAgMStfoGSnr5-PqgTow"
-                    alt="">
+                  <img class="img-fluid img-responsive" src="https://i.ytimg.com/vi/5RubUIqyy6k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApQ2FPz2UAgMStfoGSnr5-PqgTow" alt="">
                 </span>
                 <span class="video-title">Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4</span>
               </a>
             </div>
             <div class="item-video">
-              <a href="javascript:;" class="cliVeo"
-                data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcongdongvnexpress%2Fvideos%2F238755780561231%2F&show_text=0&autoplay=1&rel=0&showinfo=0"
-                title="[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19 | VnExpress.net">
+              <a href="javascript:;" class="cliVeo" data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcongdongvnexpress%2Fvideos%2F238755780561231%2F&show_text=0&autoplay=1&rel=0&showinfo=0" title="[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19 | VnExpress.net">
                 <span class="video-image">
-                  <img class="img-fluid img-responsive"
-                    src="https://iv.vnecdn.net/vnexpress/images/web/2019/04/18/live-thumb-default-8234-1554949750_500x300.jpg"
-                    alt="">
+                  <img class="img-fluid img-responsive" src="https://iv.vnecdn.net/vnexpress/images/web/2019/04/18/live-thumb-default-8234-1554949750_500x300.jpg" alt="">
                 </span>
                 <span class="video-title">[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19</span>
               </a>
             </div>
             <div class="item-video">
-              <a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/5RubUIqyy6k"
-                title="Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4 | VnExpress.net">
+              <a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/5RubUIqyy6k" title="Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4 | VnExpress.net">
                 <span class="video-image">
-                  <img class="img-fluid img-responsive"
-                    src="https://i.ytimg.com/vi/5RubUIqyy6k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApQ2FPz2UAgMStfoGSnr5-PqgTow"
-                    alt="">
+                  <img class="img-fluid img-responsive" src="https://i.ytimg.com/vi/5RubUIqyy6k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApQ2FPz2UAgMStfoGSnr5-PqgTow" alt="">
                 </span>
                 <span class="video-title">Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4</span>
               </a>
             </div>
             <div class="item-video">
-              <a href="javascript:;" class="cliVeo"
-                data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcongdongvnexpress%2Fvideos%2F238755780561231%2F&show_text=0&autoplay=1&rel=0&showinfo=0"
-                title="[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19 | VnExpress.net">
+              <a href="javascript:;" class="cliVeo" data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcongdongvnexpress%2Fvideos%2F238755780561231%2F&show_text=0&autoplay=1&rel=0&showinfo=0" title="[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19 | VnExpress.net">
                 <span class="video-image">
-                  <img class="img-fluid img-responsive"
-                    src="https://iv.vnecdn.net/vnexpress/images/web/2019/04/18/live-thumb-default-8234-1554949750_500x300.jpg"
-                    alt="">
+                  <img class="img-fluid img-responsive" src="https://iv.vnecdn.net/vnexpress/images/web/2019/04/18/live-thumb-default-8234-1554949750_500x300.jpg" alt="">
                 </span>
                 <span class="video-title">[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19</span>
               </a>
             </div>
             <div class="item-video">
-              <a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/5RubUIqyy6k"
-                title="Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4 | VnExpress.net">
+              <a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/5RubUIqyy6k" title="Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4 | VnExpress.net">
                 <span class="video-image">
-                  <img class="img-fluid img-responsive"
-                    src="https://i.ytimg.com/vi/5RubUIqyy6k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApQ2FPz2UAgMStfoGSnr5-PqgTow"
-                    alt="">
+                  <img class="img-fluid img-responsive" src="https://i.ytimg.com/vi/5RubUIqyy6k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApQ2FPz2UAgMStfoGSnr5-PqgTow" alt="">
                 </span>
                 <span class="video-title">Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4</span>
               </a>
@@ -875,6 +848,8 @@
       </div>
     </div>
   </section>
+  <!-- End Tin tức Area -->
+
   <!-- End - Content Page Area -->
 
   @@include('templates/footer.html')
@@ -896,5 +871,4 @@
 
 
 </body>
-
 </html>
