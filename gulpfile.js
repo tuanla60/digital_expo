@@ -131,7 +131,7 @@ gulp.task('js', function() {
   return gulp.src([
       'app/js/lib/jquery.min.js',
       // 'app/js/lib/popper.min.js',
-      'app/js/lib/bootstrap.min.js',
+      'app/js/lib/bootstrap.bundle.min.js', // Bootstrap v5.1.1
       'app/js/lib/swiper.min.js',
       'app/js/lib/aos.js',
       'app/js/lib/jquery.countTo.js',

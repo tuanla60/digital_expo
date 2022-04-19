@@ -30,6 +30,11 @@ function showMenu() {
 }
 
 $(document).ready(function() {
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#navbar-primary',
+      offset: 75
+    });
+
     $('.section-banner-area .title-banner').tilt();
     // $('.section-banner-area .animate-floating').tilt({
     //     reset: false
@@ -62,7 +67,7 @@ $(document).ready(function() {
 
         if($('.box-nav-top')) {
             $('html,body').animate({
-                scrollTop: $(id).offset().top-80
+                scrollTop: $(id).offset().top-70
             });
         }
     });

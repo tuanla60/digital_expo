@@ -130,21 +130,41 @@
     .nav-menu-top {
         list-style: none;
         justify-content: flex-end;
-        >li {
+        .nav-item {
             position: relative;
+            padding: 0 20px;
             &:hover {
                 .nav-sub-menu {
                     display: block;
                     top: 100%;
                 }
             }
+            &.nav-item-hightlight {
+                display: flex;
+                align-items: center;
+                padding-right: 0;
+                .nav-link {
+                    padding: 0 25px;
+                    height: 24px;
+                    background: #7FECFF;
+                    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+                    border-radius: 40px;
+                    color: #08050F;
+                    &.active {
+                        &:after {
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
         }
         
     }
     .nav-link {
-        padding: 10px 16px;
-        font-weight: 300;
-        font-size: 15px;
+        position: relative;
+        padding: 10px 0;
+        font-weight: 400;
+        font-size: 16px;
         color: $text-color-primary-1;
         @media (min-width: 1200px) {
             display: flex;
@@ -156,11 +176,22 @@
             background: rgba(#ffffff,0.03);
             transition: 200ms ease-in-out;
         }
-    }
-    .nav-item-hightlight {
-            // background-color: #7FECFF;
-            // border-radius: 30%;
+        &.active {
+            color: var(--color-secondary-600);
+            &:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: var(--color-secondary-600);
+                border-radius: 3px 3px 0px 0px;
+            }
         }
+    }
     .link-light {
         color: #ffffff;
     }

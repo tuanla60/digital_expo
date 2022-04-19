@@ -11,7 +11,7 @@ body {
     max-width: 100%;
     width: 100%;
     min-width: 320px;
-    overflow-x: hidden;
+    overflow-y: scroll;
     font-family: 'Lexend Deca', sans-serif;
     word-break: break-word;
     word-wrap: break-word;
@@ -253,4 +253,73 @@ img:not([src]) {
 }
 .embed-responsive-1by1::before {
     padding-top: 100%;
+}
+
+
+.btn-main {
+    // position: relative;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    padding: 11px 40px;
+    transition: filter 0.3s ease;
+    min-width: 170px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &__rounded {
+        border-radius: 50px;
+    }
+
+    &:hover {
+        filter: brightness(110%);
+        color: #000;
+    }
+    &__primary {
+        background-color: #7fecff;
+        color: #000;
+        &:hover {
+            background-color: #40a9ff;
+            transition: background-color ease 0.4s;
+        }
+    }
+    &__line {
+        border: 1px solid #7fecff;
+        color: #7fecff;
+    }
+    &__line:hover {
+        background-color: #7fecff;
+        color: #fff;
+    }
+    &--disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+    &__fullwidth {
+        width: 100%;
+    }
+    & + & {
+        margin-left: 15px;
+    }
+}
+.hide-on-mobile {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+.hide-on-tablet {
+    @media (min-width: 769px) and (max-width: 1023px) {
+        display: none;
+    }
+}
+.hide-on-pc {
+    @media (min-width: 1024px) {
+        display: none;
+    }
 }

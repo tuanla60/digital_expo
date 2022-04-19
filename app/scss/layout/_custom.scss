@@ -1,16 +1,37 @@
 .section-block {
-    padding: 60px 0;
+    padding: 30px 0 40px;
+    @media (min-width: 992px) {
+        padding: 40px 0 50px;
+    }
 }
 .section-block-bg {
+    position: relative;
     padding: 80px 0 100px;
-    // background: url(images/backgrounds/bg-form-register.png) no-repeat center top;
+    background: url(../images/backgrounds/bg-contact.gif);
     background-repeat: no-repeat;
     // background-attachment: fixed;
-    background-position: bottom;
-    background-size: 75%;
+    background-position: bottom center;
+    background-size: 100% auto;
 
-    @media (max-width: 768px) {
-        background-size: 125%;
+    @media (min-width: 992px) {
+        padding: 50px 0 150px;
+    }
+    &.light-on {
+        &:before {
+            content: "";
+            position: absolute;
+            width: 472px;
+            height: 446px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            background: rgba(127, 164, 238, 0.2);
+            filter: blur(200px);
+            z-index: 1;
+            pointer-events: none;
+        }
     }
 }
 .section-text-content {
@@ -36,58 +57,6 @@
     border-bottom: 1.5px solid #7fecff;
     width: 50%;
     margin: 30px auto;
-}
-.btn-main {
-    // position: relative;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 300;
-    padding: 11px 40px;
-    transition: filter 0.3s ease;
-    min-width: 170px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-
-    &__rounded {
-        border-radius: 50px;
-    }
-
-    &:hover {
-        filter: brightness(110%);
-        color: #000;
-    }
-    &__primary {
-        background-color: #7fecff;
-        color: #000;
-        &:hover {
-            background-color: #40a9ff;
-            transition: background-color ease 0.4s;
-        }
-    }
-    &__line {
-        border: 1px solid #7fecff;
-        color: #7fecff;
-    }
-    &__line:hover {
-        background-color: #7fecff;
-        color: #fff;
-    }
-    &--disabled {
-        opacity: 0.5;
-        cursor: default;
-    }
-    &__fullwidth {
-        width: 100%;
-    }
-    & + & {
-        margin-left: 15px;
-    }
 }
 .card-info {
     line-height: 1.8;
@@ -140,7 +109,7 @@
     @media (max-width: 1023px) {
         width: 100%;
         height: auto;
-        z-index: 30;
+        z-index: 2;
     }
     &__type {
         font-weight: 500;
@@ -166,19 +135,8 @@
         margin: 0;
         padding: 0 0 0 17px;
         li {
-            margin: 0;
+            margin: 0 0 8px;
         }
-    }
-}
-.line-benefit-section {
-    height: 100%;
-    width: 20px;
-    background-color: #000;
-    z-index: 10;
-    @media (max-width: 1023px) {
-        width: 100%;
-        height: 20px;
-        z-index: 30;
     }
 }
 
@@ -195,7 +153,7 @@
 
     position: relative;
     overflow: hidden;
-    z-index: 6;
+    z-index: 1;
 
     &::before {
         position: absolute;
@@ -224,7 +182,7 @@
         content: "";
         top: 0;
         right: 0;
-        z-index: 3;
+        z-index: 2;
         width: 416px;
         height: 100%;
         background: url(../images/the-iron-ball.png);
@@ -241,22 +199,16 @@
     }
 }
 
-.hide-on-mobile {
-    @media (max-width: 768px) {
-        display: none;
-    }
-}
-.hide-on-tablet {
-    @media (min-width: 769px) and (max-width: 1023px) {
-        display: none;
-    }
-}
-.hide-on-pc {
+.line-benefit-section {
+    width: 100%;
+    height: 20px;
+    background-color: #000;
+    z-index: 3;
     @media (min-width: 1024px) {
-        display: none;
+        height: 100%;
+        width: 32px;
     }
 }
-
 
 
 .swal2-container.swal2-backdrop-show, 
