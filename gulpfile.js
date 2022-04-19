@@ -118,7 +118,6 @@ gulp.task('cssreplace', done => {
 		'dist/css/styles-pc.min.css',
 		'dist/css/styles-mobile.min.css'
 	])
-	.pipe(replace('../','../../'))
 	.pipe(replace('/*!@charset*/','@charset "UTF-8";'))
 	.pipe(removeSourcemaps())
 	.pipe(cssMin())

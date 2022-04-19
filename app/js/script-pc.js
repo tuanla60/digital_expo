@@ -309,6 +309,5 @@ jQuery(function(){
 
 /*!---------------------------------
 @File: Script Layout Digital Expo
-@Update time: 2022-04-18-18h00
-@Feedback: tuanla60@fpt.com.vn
+@Update time: 2022-04-19-17h50
 ----------------------------------- */
