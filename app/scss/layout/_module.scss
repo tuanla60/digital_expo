@@ -270,12 +270,75 @@
 	        width: 100%;
 	        height: 100%;
 
+	        .wrap-img-boll-blur {
+				display: none;
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 1;
+				width: 100%;
+				height: 100%;
+				@media (min-width: 1200px) {
+					display: block;
+				}
+				.grad-first {
+					content: "";
+					position: absolute;
+					width: 459px;
+					height: 434px;
+					right: -45px;
+					top: -170px;
+					border-radius: 50%;
+
+					background: rgba(127, 164, 238, 0.4);
+					filter: blur(200px);
+					pointer-events: none;
+					// background: red;
+					z-index: -1;
+				}
+				.img-boll-blur {
+					content: "";
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 100%;
+					height: 100%;
+					// background-color: rgba(227, 227, 227, 0.05);
+					background-image: url(../images/the-iron-ball.png);
+		        	background-repeat: no-repeat;
+					background-attachment: fixed;
+					background-position: center right -10%;
+					background-size: 459px auto;
+					filter: blur(8px);
+					// backdrop-filter: blur(20px);
+					@media (min-width: 1400px) {
+						background-position: center right -5%;
+					}
+				}
+				.grad-second {
+					content: "";
+					position: absolute;
+					width: 496px;
+					height: 421px;
+					right: -440px;
+					top: -170px;
+					border-radius: 50%;
+
+					background: rgba(112, 125, 255, 0.4);
+					filter: blur(200px);
+					pointer-events: none;
+					// background: green;
+				}
+	        }
+
 			.gradient-top {
 				position: absolute;
 				width: 459px;
 				height: 434px;
 				right: -180px;
 				top: -70px;
+				border-radius: 50%;
 
 				background: rgba(101, 59, 195, 0.3);
 				filter: blur(200px);
@@ -284,6 +347,7 @@
 					left: 0;
 					right: 0;
 					top: 140px;
+					margin: auto;
 		        }
 			}
 			.gradient-conner-left {
@@ -292,6 +356,7 @@
 				height: 434px;
 				right: -130px;
 				top: 140px;
+				border-radius: 50%;
 
 				background: rgba(127, 164, 238, 0.4);
 				filter: blur(200px);
@@ -309,6 +374,7 @@
 				height: 434px;
 				right: -130px;
 				top: 213px;
+				border-radius: 50%;
 
 				background: rgba(112, 125, 255, 0.4);
 				filter: blur(200px);
@@ -347,34 +413,29 @@
 		        }
 			}
         }
-		.layber-blur-bg {
-			position: absolute;
-			z-index: 2;
-			width: 100%;
-			height: 100%;
-	    	background: radial-gradient(circle, rgba(100,39,201, 0.3) 0%, rgba(100,39,201,0) 100%);
-			backdrop-filter: blur(10px);
-		}
-		&::before {
-			
-		}
-
-
-	    &::after {
-	        position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background: url(../images/the-iron-ball.png) no-repeat fixed;
-    background-position: 95%;
-    background-size: 420px;
-	@media (max-width: 1024px) {
-		display: none;
-	}
-	    }
+		// .layber-blur-bg {
+		// 	position: absolute;
+		// 	z-index: 2;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	background: radial-gradient(circle, rgba(100,39,201, 0.3) 0%, rgba(100,39,201,0) 100%);
+		// 	backdrop-filter: blur(10px);
+		// }
+		// &::after {
+		// 	position: absolute;
+		// 	content: "";
+		// 	top: 0;
+		// 	right: 0;
+		// 	z-index: 1;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	background: url(../images/the-iron-ball.png) no-repeat fixed;
+		// 	background-position: 95%;
+		// 	background-size: 420px;
+		// 	@media (max-width: 1024px) {
+		// 		display: none;
+		// 	}
+	 //    }
 	}
 
 	.line-benefit-section {
@@ -391,23 +452,23 @@
 
 .section-block-bg {
     position: relative;
-    padding: 80px 0 100px;
-    background: url(../images/backgrounds/bg-contact.gif);
-    background-repeat: no-repeat;
-    // background-attachment: fixed;
-    background-position: bottom center;
-    background-size: 100% auto;
+    padding: 40px 0 160px;
+	background-repeat: no-repeat;
+	@media (max-width: 767px) {
+		background-image: url(../images/backgrounds/gif-bg-mobile.gif);
+		background-size: 515px auto;
+    	background-position: bottom -11% center;
+	}
+	@media (min-width: 768px) {
+    	padding: 80px 0 100px;
+	    background-image: url(../images/backgrounds/bg-contact.gif);
+		background-size: 100% auto;
+    	background-position: bottom center;
+	}
 
     @media (min-width: 992px) {
         padding: 50px 0 150px;
     }
-	@media (max-width: 768px) {
-    background: url(../images/backgrounds/gif-bg-mobile.gif);
-	// background-size: 115%;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: 100% auto;
-	}
     &.light-on {
         &:before {
             content: "";
@@ -587,8 +648,6 @@
 			top: 0;
 			width: 357px;
 			height: 100%;
-			// border: 1px solid red;
-			top: 0px;
 			background: rgb(0, 0, 0);
 			background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 			// background: rgb(79,27,197);
