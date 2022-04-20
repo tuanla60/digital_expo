@@ -253,46 +253,46 @@ jQuery(function($) {
 });
 
 
-var vStatus = '';
-$('.cliVeo').click(function() {
-    $('.item-video').removeClass('active');
-    $(this).parent().addClass('active');
-    var tit=$(this).attr('title');
-    var url=$(this).attr('data-url');
+// var vStatus = '';
+// $('.cliVeo').click(function() {
+//     $('.item-video').removeClass('active');
+//     $(this).parent().addClass('active');
+//     var tit=$(this).attr('title');
+//     var url=$(this).attr('data-url');
 
-    var url_vnexpress=url.indexOf("vnecdn.net") !== -1;
-    var url_facebook=url.indexOf("facebook.com") !== -1;
-    var url_youtube=url.indexOf("youtube.com") !== -1;
-    var title_new = '';
+//     var url_vnexpress=url.indexOf("vnecdn.net") !== -1;
+//     var url_facebook=url.indexOf("facebook.com") !== -1;
+//     var url_youtube=url.indexOf("youtube.com") !== -1;
+//     var title_new = '';
 
-    vStatus=$(this).attr('data-status');
-    toggleClass= 'videoName '+vStatus;
-    if(vStatus == 'live') {
-        title_new = '<span class="live">Live</span> <span>'+tit+'</span>';
-        $('#captionVie').html(title_new);
-    }else {
-        title_new = '<span>'+tit+'</span>';
-        $('#captionVie').html(title_new);
-    }
-    $('#captionVie').attr('class', toggleClass);
+//     vStatus=$(this).attr('data-status');
+//     toggleClass= 'videoName '+vStatus;
+//     if(vStatus == 'live') {
+//         title_new = '<span class="live">Live</span> <span>'+tit+'</span>';
+//         $('#captionVie').html(title_new);
+//     }else {
+//         title_new = '<span>'+tit+'</span>';
+//         $('#captionVie').html(title_new);
+//     }
+//     $('#captionVie').attr('class', toggleClass);
 
-    // Auto play video after click thumb
-    if(url_vnexpress == true){
-        $('#ifrLarger').attr('src',url+'?autoplay=1');
-    }else if(url_youtube == true){
-        $('#ifrLarger').attr('src',url+'?autoplay=1'); 
-    }else if(url_facebook == true){
-        $('#ifrLarger').attr('src',url+'&autoplay=1');
-    }else {
-        $('#ifrLarger').attr('src',url);
-    }
-    // Scroll wrap video show
-    if($(".section-video-live-pc")[0]){
-        $('html,body').animate({
-            scrollTop: $(".section-video-live-pc").offset().top-80
-        });
-    }
-});
+//     // Auto play video after click thumb
+//     if(url_vnexpress == true){
+//         $('#ifrLarger').attr('src',url+'?autoplay=1');
+//     }else if(url_youtube == true){
+//         $('#ifrLarger').attr('src',url+'?autoplay=1'); 
+//     }else if(url_facebook == true){
+//         $('#ifrLarger').attr('src',url+'&autoplay=1');
+//     }else {
+//         $('#ifrLarger').attr('src',url);
+//     }
+//     // Scroll wrap video show
+//     if($(".section-video-live-pc")[0]){
+//         $('html,body').animate({
+//             scrollTop: $(".section-video-live-pc").offset().top-80
+//         });
+//     }
+// });
 
 
 jQuery(function(){
@@ -309,5 +309,5 @@ jQuery(function(){
 
 /*!---------------------------------
 @File: Script Layout Digital Expo
-@Update time: 2022-04-19-17h50
+@Update time: 2022-04-20-09h00
 ----------------------------------- */

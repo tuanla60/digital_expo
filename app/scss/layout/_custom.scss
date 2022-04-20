@@ -3,3 +3,9 @@
 .swal2-container.swal2-noanimation {
     backdrop-filter: blur(10px);
 }
+.swal2-title {
+    font-size: 18px;
+    @media (min-width: 768px) {
+        font-size: 21px;
+    }
+}
