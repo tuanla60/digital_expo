@@ -101,6 +101,9 @@
         @media (max-width: 768px) {
             padding: 3px;
             flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     }
     &__icon {
@@ -113,6 +116,11 @@
         color: #7fecff;
         @media (max-width: 768px) {
             font-size: 20px;
+        }
+    }
+    &__content {
+        @media (max-width: 768px) {
+            text-align: center;            
         }
     }
     &__text {
@@ -131,7 +139,7 @@
     width: calc(100% / 3.2);
     z-index: 9;
     //  background: rgba(255, 255, 255, 0.5);
-    background: rgba(100, 39, 201, 0.3);
+    // background: rgba(100, 39, 201, 0.3);
     backdrop-filter: blur(10px);
 
     @media (max-width: 1023px) {
@@ -187,6 +195,7 @@
     flex-wrap: wrap;
     height: 100%;
     min-height: 483px;
+    background: radial-gradient(circle, rgba(100,39,201,0.3029586834733894) 0%, rgba(100,39,201,0) 100%);
     // background: #3d0b55;
     // backdrop-filter: blur(30px);
 
@@ -222,14 +231,18 @@
         width: 100%;
         height: 100%;
         background: url(../images/the-iron-ball.png) no-repeat fixed;
-        background-position: right;
-        background-size: 500px;
-        @media (min-width: 1680px) {
-            top: 0;
-            right: 0;
-            background-size: 500px;
-            background-position: top;
+        background-position: 95%;
+        background-size: 420px;
+        @media (max-width: 768px){
+            background-position: 350% 45%;
         }
+
+        // @media (min-width: 1680px) {
+        //     top: 0;
+        //     right: 0;
+        //     background-size: 500px;
+        //     background-position: top;
+        // }
     }
 }
 
