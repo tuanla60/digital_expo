@@ -4,6 +4,8 @@
 html {
     margin: 0;
     padding: 0;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
 }
 body {
     position: relative;
@@ -36,6 +38,15 @@ body {
 
     color: var(--text);
     background-color: var(--background);
+}
+.main_area {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    @media (min-width: 1200px) {
+        overflow: initial;
+    }
 }
 
 header, section, footer, aside, nav, main, article, figure {

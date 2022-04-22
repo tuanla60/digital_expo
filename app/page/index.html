@@ -14,7 +14,7 @@
   @@include('templates/header.html')
 
   <!-- Start - Content Page Area -->
-  <main>
+  <main class="main_area">
 
     <!-- Start Intro - Banner Area -->
     <section class="section-banner-area" id="Gioi_thieu">
@@ -246,7 +246,7 @@
                 disableOnInteraction: false,
                 // pauseOnMouseEnter: true,
             },
-            speed: 8000,
+            speed: 12000,
             loopFillGroupWithBlank: false,
             watchOverflow: true,
             pagination: {
@@ -270,15 +270,18 @@
               }
             }
           });
-          $('.slide-autoplay').on("mouseover", function(e) {
-              var trans_current = slide_technology.getTranslate();
-              slide_technology.translateTo(trans_current, 0, false);
-              slide_technology.autoplay.stop();
-          });
-          $('.slide-autoplay').on("mouseleave", function(e) {
-              slide_technology.slideReset(8000);
-              slide_technology.autoplay.start();
-          });
+
+          if(device_mobile === false) {
+            $('.slide-autoplay').on("mouseover", function(e) {
+                var trans_current = slide_technology.getTranslate();
+                slide_technology.translateTo(trans_current, 0, false);
+                slide_technology.autoplay.stop();
+            });
+            $('.slide-autoplay').on("mouseleave", function(e) {
+                slide_technology.slideReset(8000);
+                slide_technology.autoplay.start();
+            });
+          }
         });
       </script>
     </section>
@@ -292,8 +295,7 @@
           <h1 class="title-name section-title-larger text-color-01">Lợi ích khi tham gia</h1>
         </div>
 
-        <div class="row justify-content-center ">
-          <!-- show on PC -->
+        <div class="row justify-content-center">
           <div class="col-12 col-xl-9 col-xxl-10">
             <div class="benefit-section-list justify-content-end">
               <div class="layer-bg">
@@ -318,38 +320,6 @@
               </div>
               <div class="line-benefit-section"></div>
               <div class="card-pricing card-pricing__middle">
-                <h3 class="card-pricing__type">Đối với nhà tổ chức</h3>
-                <ul class="card-pricing__list">
-                  <li>Tiết kiệm chi phí</li>
-                  <li>Thống kê, báo cáo, dữ liệu dễ dàng</li>
-                  <li>Tăng mức độ uy tín cho triển lãm</li>
-                </ul>
-              </div>
-              <div class="line-benefit-section"></div>
-              <div class="card-pricing">
-                <h3 class="card-pricing__type">Đối với nhà trưng bày</h3>
-                <ul class="card-pricing__list">
-                  <li>Tăng số lượng và mở rộng đa dạng đối tượng khách tham quan hơn triển lãm truyền thông</li>
-                  <li>Phân tích và báo cáo chuyên sâu về khách hàng truy cập gian hàng.</li>
-                  <li>Cơ hội quảng bá thương hiệu, gia tăng doanh số và gặp gỡ hàng trăm đối tác tiềm năng</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Show on mobile -->
-          <div class="col-12 col-xl-9 hide-on-pc d-none">
-            <div class="benefit-section-list">
-              <div class="card-pricing">
-                <h3 class="card-pricing__type">Đối với khách tham quan</h3>
-                <ul class="card-pricing__list">
-                  <li>Tham quan cùng lúc nhiều gian hàng</li>
-                  <li>Trải nghiệm triển lãm mọi lúc, mọi nơi trên thiết bị di động thông minh</li>
-                  <li>Lựa chọn nhiều hình thức tham quan theo nhu cầu </li>
-                </ul>
-              </div>
-              <div class="line-benefit-section"></div>
-              <div class="card-pricing">
                 <h3 class="card-pricing__type">Đối với nhà tổ chức</h3>
                 <ul class="card-pricing__list">
                   <li>Tiết kiệm chi phí</li>

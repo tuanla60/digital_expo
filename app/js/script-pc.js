@@ -1,3 +1,13 @@
+var _isMobile = (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
+var device_mobile;
+Boolean(device_mobile);
+if(_isMobile){
+    device_mobile = true;
+    document.getElementsByTagName("html")[0].classList.add("mobile");
+}else{
+    device_mobile = false;
+    document.getElementsByTagName("html")[0].classList.add("pc");
+}
 
 function showMenu() {
     var wrapper = $('html'),
@@ -309,5 +319,5 @@ jQuery(function(){
 
 /*!---------------------------------
 @File: Script Layout Digital Expo
-@Update time: 2022-04-20-09h00
+@Update time: 2022-04-22-10h40
 ----------------------------------- */
