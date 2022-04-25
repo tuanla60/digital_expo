@@ -132,7 +132,10 @@
       <div class="container clearfix">
         <div class="area-box-title">
           <h2 class="title-name section-title-larger text-color-01">Sử dụng công nghệ hàng đầu</h2>
-         
+          <div class="group-btn-slide">
+            <div class="swiper-button-prev-slide-technology"></div>
+            <div class="swiper-button-next-slide-technology"></div>
+          </div>
         </div>
       </div>
       <div class="area-box-list">
@@ -176,6 +179,7 @@
                           Gian hàng đa chiều
                         </a>
                         <p class="item-sub-content">triển làm kết hợp gian hàng online</p>
+
                       </div>
 
                       <a href="https://cloudexpo.hiverlab.com/?Le3GOe6" title="Trải nghiệm ngay" class="btn-readmore">Trải nghiệm ngay</a>
@@ -263,7 +267,14 @@
             speed: 8000,
             loopFillGroupWithBlank: false,
             watchOverflow: true,
-          
+            pagination: {
+              el: '.swiper-pagination-slide-technology',
+              clickable: false,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next-slide-technology',
+              prevEl: '.swiper-button-prev-slide-technology',
+            },
             breakpoints: {
               414: {
                 slidesPerView: 1.1,
@@ -278,13 +289,13 @@
             }
           });
           $('.slide-autoplay').on("mouseover", function(e) {
-          var trans_current = slide_technology.getTranslate();
-          slide_technology.translateTo(trans_current, 0, false);
-          slide_technology.autoplay.stop();
+            var trans_current = slide_technology.getTranslate();
+            slide_technology.translateTo(trans_current, 0, false);
+            slide_technology.autoplay.stop();
           });
           $('.slide-autoplay').on("mouseleave", function(e) {
-          slide_technology.slideReset(8000);
-          slide_technology.autoplay.start();
+            slide_technology.slideReset(8000);
+            slide_technology.autoplay.start();
           });
         });
         
