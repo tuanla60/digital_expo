@@ -141,7 +141,7 @@ function sendForm(_data) {
                     allowEscapeKey: false,
                     allowOutsideClick: false,
                     icon: 'success',
-                    title: 'Gửi thông tin thành công!',
+                    title: 'BTC đã nhận được thông tin từ Quý khách. Chúng tôi sẽ liên hệ trong thời gian sớm nhất.<br/> Trân trọng cảm ơn!',
                     showCloseButton: true,
                     confirmButtonText: 'Đóng'
                 }).then((result) => {

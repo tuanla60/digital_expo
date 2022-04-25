@@ -42,6 +42,9 @@
 			.btn-main {
 				font-weight: 400;
 				font-size: 18px;
+				@media (max-width: 768px) {
+					font-size: 16px;
+				}
 			}
 		}
 		.wrap-item-img {
@@ -109,166 +112,165 @@
 /* End Banner Top Area css
 ============================================================================================ */
 
-
 /* Start Number Fun Area css
 ============================================================================================ */
 .section-number-fun-area {
-    padding: 30px 0 40px;
-    @media (min-width: 992px) {
-        padding: 40px 0 50px;
-    }
+	padding: 30px 0 40px;
+	@media (min-width: 992px) {
+		padding: 40px 0 50px;
+	}
 
-    .area-inner {
-    	display: flex;
-        flex-wrap: wrap;
-    	@include gap_4(2,40px);
+	.area-inner {
+		display: flex;
+		flex-wrap: wrap;
+		@include gap_4(2, 40px);
 
-	    @media (min-width: 992px) {
-    		@include gap_4(4,40px);
-	    }
-	    .item-col {
-
-	    }
-    }
+		@media (min-width: 992px) {
+			@include gap_4(4, 40px);
+		}
+		.item-col {
+		}
+	}
 	.card-info {
-	    line-height: 1.8;
-	    // margin: 1rem;
+		line-height: 1.8;
+		// margin: 1rem;
 
-	    &__body {
-	        color: #fff;
-	        display: flex;
-	        flex-direction: column;
-            flex-wrap: wrap;
+		&__body {
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
 			align-items: center;
 			text-align: center;
-	        @media (min-width: 768px) {
-	        	flex-direction: row;
+			@media (min-width: 768px) {
+				flex-direction: row;
 				text-align: left;
-            	flex-wrap: nowrap;
-	        }
-	    }
-	    &__icon {
-	        font-size: 40px;
-	        margin: 0 0 10px;
-	        @media (min-width: 768px) {
-	        	margin: 0 10px 0 0;
-	        }
-	    }
-	    &__title {
-            font-size: 20px;
-	        font-weight: 550;
-	        color: #7fecff;
-	        @media (min-width: 1400px) {
-	        	font-size: 30px;
-	        }
-	    }
-	    &__text {
-	        margin: 0;
-	        font-size: 13px;
-	        @media (min-width: 1400px) {
-	            font-size: 18px;
-	        }
-	    }
+				flex-wrap: nowrap;
+			}
+		}
+		&__icon {
+			font-size: 40px;
+			margin: 0 0 10px;
+			@media (min-width: 768px) {
+				margin: 0 10px 0 0;
+			}
+		}
+		&__title {
+			font-size: 20px;
+			font-weight: 550;
+			color: #7fecff;
+			@media (min-width: 1400px) {
+				font-size: 30px;
+			}
+		}
+		&__text {
+			margin: 0;
+			font-size: 13px;
+			line-height: 1.4;
+			font-weight: 300;
+			@media (min-width: 1400px) {
+				font-size: 20px;
+			}
+		}
 	}
 	.section-text-content {
-    	margin: 20px 0 0;
-	    font-weight: 300;
-	    font-size: 17px;
+		margin: 20px 0 0;
+		font-weight: 300;
+		font-size: 17px;
 	}
 	.line-bottom {
-	    border-bottom: 1px solid #7fecff;
-	    width: 45%;
-	    margin: 30px auto;
+		border-bottom: 1px solid #7fecff;
+		width: 45%;
+		margin: 30px auto;
 	}
 }
 /* End Number Fun Area css
 ============================================================================================ */
 
-
 /* Start Lợi ích khi tham gia Area css
 ============================================================================================ */
 .section-benefits-area {
-    padding: 30px 0 40px;
-    @media (min-width: 992px) {
-        padding: 40px 0 50px;
-    }
+	padding: 30px 0 40px;
+	@media (min-width: 992px) {
+		padding: 40px 0 50px;
+	}
 	.heading-title {
-	    margin-bottom: 20px;
-	    .title-name {
-	        font-size: 32px;
-	        @media (max-width: 768px) {
-	            font-size: 20px;
-	        }
-	    }
+		margin-bottom: 20px;
+		.title-name {
+			font-size: 32px;
+			@media (max-width: 768px) {
+				font-size: 20px;
+			}
+		}
 	}
 
 	.card-pricing {
-	    text-align: left;
-	    padding: 20px;
-	    margin: 0;
-	    height: 100%;
-	    width: calc(100% / 3.2);
-	    z-index: 3;
+		text-align: left;
+		padding: 20px;
+		margin: 0;
+		height: 100%;
+		width: calc(100% / 3.2);
+		z-index: 3;
 
-	    @media (min-width: 992px) {
-	        padding: 20px 20px 15px;
-	    }
-	    @media (max-width: 1023px) {
-	        width: 100%;
-	        height: auto;
-	    }
-	    &__type {
-	        font-weight: 500;
-	        margin: 0 0 30px;
-	        font-size: 16px;
-	        position: relative;
-	        @media (min-width: 768px) {
-	            font-size: 20px;
-	        }
-	    }
-	    &__type::after {
-	        position: absolute;
-	        content: "";
-	        width: 80px;
-	        border-bottom: 1px solid #7FECFF;
-	        left: 0;
-	        bottom: -12px;
-	    }
-	    &__list {
-	        list-style-type: disc;
-	        font-size: 14px;
-	        font-weight: 300;
-	        margin: 0;
-	        padding: 0 0 0 17px;
-	        li {
-	            margin: 0 0 8px;
-	        }
-	    }
+		@media (min-width: 992px) {
+			padding: 20px 20px 15px;
+		}
+		@media (max-width: 1023px) {
+			width: 100%;
+			height: auto;
+		}
+		&__type {
+			font-weight: 500;
+			margin: 0 0 30px;
+			font-size: 16px;
+			position: relative;
+			@media (min-width: 768px) {
+				font-size: 20px;
+			}
+		}
+		&__type::after {
+			position: absolute;
+			content: "";
+			width: 80px;
+			border-bottom: 1px solid #7fecff;
+			left: 0;
+			bottom: -12px;
+		}
+		&__list {
+			list-style-type: disc;
+			font-size: 14px;
+			font-weight: 300;
+			margin: 0;
+			padding: 0 0 0 17px;
+			li {
+				margin: 0 0 8px;
+			}
+		}
 	}
 
 	.benefit-section-list {
 		position: relative;
-	    background-color: transparent;
-	    height: 100%;
-	    min-height: 483px;
-	    // z-index: 2;
-	    overflow: hidden;
-	    display: flex;
-	    justify-content: center;
-	    align-items: flex-start;
-	    flex-wrap: wrap;
-		
-        @media (min-width: 1024px) {
-	    	flex-wrap: nowrap;
-        }
+		background-color: transparent;
+		height: 100%;
+		min-height: 483px;
+		// z-index: 2;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
 
-        .layer-bg {
-	        position: absolute;
-	        content: "";
+		@media (min-width: 1024px) {
+			flex-wrap: nowrap;
+		}
+
+		.layer-bg {
+			position: absolute;
+			content: "";
 			top: 0;
-	        left: 0;
-	        width: 100%;
-	        height: 100%;
+			left: 0;
+			width: 100%;
+			height: 100%;
 
 			.gradient-top {
 				position: absolute;
@@ -280,11 +282,11 @@
 				background: rgba(101, 59, 195, 0.3);
 				filter: blur(200px);
 				pointer-events: none;
-		        @media (min-width: 1024px) {
+				@media (min-width: 1024px) {
 					left: 0;
 					right: 0;
 					top: 140px;
-		        }
+				}
 			}
 			.gradient-conner-left {
 				position: absolute;
@@ -296,12 +298,12 @@
 				background: rgba(127, 164, 238, 0.4);
 				filter: blur(200px);
 				pointer-events: none;
-		        @media (min-width: 1024px) {
+				@media (min-width: 1024px) {
 					left: 0;
 					right: 0;
 					top: 140px;
 					transform: translateX(-50%);
-		        }
+				}
 			}
 			.gradient-conner-right {
 				position: absolute;
@@ -313,133 +315,134 @@
 				background: rgba(112, 125, 255, 0.4);
 				filter: blur(200px);
 				pointer-events: none;
-		        @media (min-width: 1024px) {
+				@media (min-width: 1024px) {
 					left: 0;
 					right: 0;
 					top: 213px;
 					margin: auto;
 					transform: translateX(50%);
-		        }
+				}
 			}
 
 			.img-boll {
 				position: absolute;
-		        top: 0;
-		        right: 0;
-		        width: 416px;
-		        height: 100%;
-	        	z-index: 2;
-		        pointer-events: none;
-	            background-image: url(../images/the-iron-ball.png);
-		        background-repeat: no-repeat;
+				top: 0;
+				right: 0;
+				width: 416px;
+				height: 100%;
+				z-index: 2;
+				pointer-events: none;
+				background-image: url(../images/the-iron-ball.png);
+				background-repeat: no-repeat;
 				background-size: 390px auto;
-	        	background-position: center right -270px;
-	        	background-attachment: fixed;
-		        @media (min-width: 575px) {
-		            background-attachment: unset;
-		        }
-		        @media (min-width: 1024px) {
-		            background-attachment: unset;
+				background-position: center right -270px;
+				background-attachment: fixed;
+				@media (min-width: 575px) {
+					background-attachment: unset;
+				}
+				@media (min-width: 1024px) {
+					background-attachment: unset;
 					width: 100%;
 					height: 100%;
 					background-size: 735px 711px;
 					background-position: bottom 195% center;
-		        }
+				}
 			}
-        }
+		}
 		.layber-blur-bg {
 			position: absolute;
 			z-index: 2;
 			width: 100%;
 			height: 100%;
-	    	background: radial-gradient(circle, rgba(100,39,201, 0.3) 0%, rgba(100,39,201,0) 100%);
+			// background: radial-gradient(circle, rgba(100,39,201, 0.3) 0%, rgba(100,39,201,0) 100%);
 			backdrop-filter: blur(10px);
 		}
 		&::before {
-			
 		}
 
-
-	    &::after {
-	        position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background: url(../images/the-iron-ball.png) no-repeat fixed;
-    background-position: 95%;
-    background-size: 420px;
-	@media (max-width: 1024px) {
-		display: none;
-	}
-	    }
+		&::after {
+			position: absolute;
+			content: "";
+			top: 0;
+			right: 0;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			background: url(../images/the-iron-ball.png) no-repeat fixed;
+			background-position: 95%;
+			background-size: 420px;
+			@media (max-width: 1024px) {
+				display: none;
+			}
+		}
 	}
 
 	.line-benefit-section {
-	    width: 100%;
-	    height: 20px;
-	    background-color: #000;
-	    z-index: 4;
-	    @media (min-width: 1024px) {
-	        height: 100%;
-	        width: 32px;
-	    }
+		width: 100%;
+		height: 20px;
+		background-color: #000;
+		z-index: 4;
+		@media (min-width: 1024px) {
+			height: 100%;
+			width: 32px;
+		}
 	}
 }
 
 .section-block-bg {
-    position: relative;
-    padding: 80px 0 100px;
-    background: url(../images/backgrounds/bg-contact.gif);
-    background-repeat: no-repeat;
-    // background-attachment: fixed;
-    background-position: bottom center;
-    background-size: 100% auto;
+	position: relative;
+	padding: 80px 0 100px;
+	background: url(../images/backgrounds/bg-contact.gif);
+	background-repeat: no-repeat;
+	// background-attachment: fixed;
+	background-position: bottom center;
+	background-size: 100% auto;
 
-    @media (min-width: 992px) {
-        padding: 50px 0 150px;
-    }
-	@media (max-width: 768px) {
-    background: url(../images/backgrounds/gif-bg-mobile.gif);
-	// background-size: 115%;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: 100% auto;
+	@media (min-width: 992px) {
+		padding: 50px 0 150px;
 	}
-    &.light-on {
-        &:before {
-            content: "";
-            position: absolute;
-            width: 472px;
-            height: 446px;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            margin: auto;
-            background: rgba(127, 164, 238, 0.2);
-            filter: blur(200px);
-            z-index: 1;
-            pointer-events: none;
-        }
-    }
-    .heading-title__title {
+	@media (max-width: 768px) {
+		background: url(../images/backgrounds/gif-bg-mobile.gif);
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 120% auto;
+		padding: 60px 0 160px;
+	}
+	&.light-on {
+		&:before {
+			content: "";
+			position: absolute;
+			width: 472px;
+			height: 446px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+			background: rgba(127, 164, 238, 0.2);
+			filter: blur(200px);
+			z-index: 1;
+			pointer-events: none;
+		}
+	}
+	.heading-title__title {
 		margin-bottom: 15px;
-    }
+		font-size: 28px;
+		@media (max-width: 768px) {
+			font-size: 20px;
+		}
+	}
 	.help-text-info__text {
 		margin-bottom: 20px;
-	    font-weight: 300;
-	    font-size: 17px;
-	    @media (max-width: 768px) {
-	        font-size: 14px;
-	    }
+		font-weight: 300;
+		font-size: 17px;
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
 	}
 }
 /* End Lợi ích khi tham gia Area css
 ============================================================================================ */
-
 
 /* Start Các sự kiện đã diễn ra Area css
 ============================================================================================ */
@@ -468,7 +471,7 @@
 			padding-right: 20px;
 			margin-bottom: 10px;
 			font-weight: 500;
-			font-size: 26px;
+			font-size: 32px;
 			@media (max-width: 768px) {
 				font-size: 20px;
 			}
@@ -604,8 +607,8 @@
 			// position: relative;
 
 			&.slide-autoplay {
-				.swiper-wrapper{
-					transition-timing-function:linear!important; 
+				.swiper-wrapper {
+					transition-timing-function: linear !important;
 					position: relative;
 				}
 			}
@@ -669,14 +672,15 @@
 							width: 100%;
 							margin: 10px 0 10px;
 							padding: 0;
-							font-weight: 500;
-							font-size: 14px;
-							line-height: 1.3;
+							// line-height: 1.3;
 							@media (min-width: 992px) {
 								font-size: 16px;
 							}
 							.item-title-a {
 								position: relative;
+								font-size: 20px;
+								font-weight: 550;
+								line-height: 1.4;
 								display: block;
 								display: -webkit-box;
 								padding: 0;
@@ -686,12 +690,26 @@
 								overflow: hidden;
 								-webkit-box-orient: vertical;
 								text-overflow: ellipsis;
-								-webkit-line-clamp: 1;
+								-webkit-line-clamp: 2;
 								word-break: break-word;
 								&:hover {
 								}
+								@media (max-width: 768px) {
+									font-size: 14px;
+								}
 							}
 						}
+						.item-sub-content {
+							font-size: 14px;
+							font-weight: 300;
+							color: #fff;
+							margin: 0 0 12px;
+
+							@media (max-width: 768px) {
+									font-size: 12px;
+								}
+						}
+						
 						// .item-description {
 						// 	max-height: 75px;
 						// 	margin: 0 0 5px;
@@ -722,9 +740,9 @@
 							display: inline-flex;
 							justify-content: center;
 							align-items: center;
-
 							box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
 							border-radius: 20px;
+
 							&:before {
 								content: "\f0da";
 								position: relative;
@@ -742,8 +760,11 @@
 								text-rendering: auto;
 							}
 							&:hover {
-								background: #40A9FF;
+								background: #40a9ff;
 							}
+						}
+						.btn-readmore {
+							font-size: 12px;
 						}
 					}
 				}
@@ -913,7 +934,6 @@
 /* End Các sự kiện đã diễn ra Area css
 ============================================================================================ */
 
-
 /* Start Các thương hiệu đã hợp tác Area css
 ============================================================================================ */
 .section-unit {
@@ -921,6 +941,7 @@
 	display: block;
 	width: 100%;
 	padding: 40px 0;
+	margin-bottom: -60px;
 	overflow: hidden;
 	.unit-inner {
 		display: block;
@@ -947,7 +968,7 @@
 			);
 			position: absolute;
 			max-width: 954px;
-    		width: 100%;
+			width: 100%;
 			height: 1px;
 			margin: auto;
 			top: 0;
@@ -958,7 +979,7 @@
 		.title-name {
 			position: relative;
 			display: inline-block;
-			font-size: 24px;
+			font-size: 32px;
 			line-height: 31px;
 			text-transform: uppercase;
 			z-index: 1;
@@ -973,7 +994,7 @@
 				bottom: 0;
 				transform: scale(1.1);
 				z-index: -1;
-				@media (min-width: 768px){
+				@media (min-width: 768px) {
 					transform: scale(1.3);
 				}
 			}
@@ -1132,15 +1153,14 @@
 /* End Các thương hiệu đã hợp tác Area css
 ============================================================================================ */
 
-
 /* Start Form Đăng ký Area css
 ============================================================================================ */
 .section-frm-contact {
 	position: relative;
 	display: block;
-	padding: 20px 0 0;
+	padding: 60px 0 0;
 	@media (min-width: 1200px) {
-		padding: 60px 0 0;
+		padding: 90px 0 0;
 		margin: 30px 0;
 	}
 	.section-frm-contact-inner {
@@ -1187,7 +1207,7 @@
 
 			@media (min-width: 768px) {
 				padding: 30px 0;
-				border: 1px solid #7FECFF;
+				border: 1px solid #7fecff;
 				&:before {
 					content: "";
 					position: absolute;
@@ -1250,7 +1270,7 @@
 			}
 			.form-control {
 				background: rgba(227, 227, 227, 0.2);
-				border: 1px solid rgba(#40A9FF,0);
+				border: 1px solid rgba(#40a9ff, 0);
 				border-radius: 2px;
 				outline: none;
 				box-shadow: none;
@@ -1262,7 +1282,7 @@
 
 				&:focus {
 					background: rgba(64, 169, 255, 0.2);
-					border: 1px solid rgba(#40A9FF,1);
+					border: 1px solid rgba(#40a9ff, 1);
 				}
 
 				&::placeholder {
@@ -1282,11 +1302,15 @@
 			.form-select {
 				color: #ced4da;
 				font-weight: 300;
+				background: url('../images/icons/icon_down.svg') no-repeat right;
+				background-color: rgba(227, 227, 227, 0.2);
+				-webkit-appearance: none;
+				background-position-x: 95%;
 				&:focus {
 					background: #2d2d2d;
 					color: #ffffff;
 				}
-			}
+			} 
 			.col-form-label {
 				font-weight: 500;
 				font-size: 16px;
@@ -1317,6 +1341,7 @@
 			.btn-main {
 				font-weight: 400;
 				font-size: 16px;
+
 			}
 		}
 		.contact-form-border {
@@ -1324,10 +1349,19 @@
 			border-style: solid;
 		}
 	}
+	.frm-text-hotline {
+		text-align: center;
+		font-size: 18px;
+		font-weight: 300;
+		margin: 15px 0 0;
+		&__number {
+			text-decoration: none;
+			color: #fff;
+		}
+	}
 }
 /* End Form Đăng ký Area css
 ============================================================================================ */
-
 
 /* Start Tin tức Area css
 ============================================================================================ */
@@ -1391,7 +1425,7 @@
 			font-weight: 400;
 			font-size: 16px;
 			text-decoration-line: underline;
-			color: #7FECFF;
+			color: #7fecff;
 		}
 	}
 	.video-box-content {
@@ -1453,7 +1487,8 @@
 			.item-video {
 				position: relative;
 				width: 100%;
-				padding: 8px 0;
+				// padding: 8px 0;
+				padding: 0 0 15px;
 				// &:first-child {
 				// 	padding-top: 0;
 				// }
@@ -1578,7 +1613,7 @@
 						display: -webkit-box;
 						font-weight: 300;
 						font-size: 12px;
-						color: #CBCBCB;
+						color: #cbcbcb;
 						overflow: hidden;
 						-webkit-box-orient: vertical;
 						text-overflow: ellipsis;

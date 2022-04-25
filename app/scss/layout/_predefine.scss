@@ -229,6 +229,8 @@ img:not([src]) {
     width: 100%;
     padding: 0;
     overflow: hidden;
+    border-radius: 4px;
+    
     &::before {
         display: block;
         content: "";
@@ -329,7 +331,9 @@ img:not([src]) {
 .zoomIn img {
     transform: scale(1);
     transition: 500ms ease-in-out;
+    border-radius: 4px;
 }
 .zoomIn:hover img {
     transform: scale(1.1);
+    border-radius: 4px;
 }
