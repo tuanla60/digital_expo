@@ -168,9 +168,11 @@
 	    &__text {
 	        margin: 0;
 	        font-size: 13px;
-	        @media (min-width: 1400px) {
-	            font-size: 18px;
-	        }
+			line-height: 1.4;
+			font-weight: 300;
+			@media (min-width: 1400px) {
+				font-size: 20px;
+			}
 	    }
 	}
 	.section-text-content {
@@ -495,6 +497,10 @@
     }
     .heading-title__title {
 		margin-bottom: 15px;
+		font-size: 20px;
+		@media (min-width: 768px) {
+			font-size: 28px;
+		}
     }
 	.help-text-info__text {
 		margin-bottom: 20px;
@@ -536,9 +542,9 @@
 			padding-right: 20px;
 			margin-bottom: 10px;
 			font-weight: 500;
-			font-size: 26px;
-			@media (max-width: 768px) {
-				font-size: 20px;
+			font-size: 20px;
+			@media (min-width: 992px) {
+				font-size: 32px;
 			}
 			// &:before {
 			// 	content: '';
@@ -746,7 +752,7 @@
 							font-size: 14px;
 							line-height: 1.3;
 							@media (min-width: 992px) {
-								font-size: 16px;
+								font-size: 20px;
 							}
 							.item-title-a {
 								position: relative;
@@ -759,10 +765,30 @@
 								overflow: hidden;
 								-webkit-box-orient: vertical;
 								text-overflow: ellipsis;
-								-webkit-line-clamp: 1;
+								-webkit-line-clamp: 2;
 								word-break: break-word;
 								&:hover {
 								}
+							}
+						}
+						.item-description {
+							position: relative;
+							display: -webkit-box;
+							color: #fff;
+							max-height: 40px;
+							margin: 0 0 12px;
+							font-weight: 300;
+							font-size: 12px;
+							line-height: 1.4;
+							padding: 0;
+							overflow: hidden;
+							-webkit-box-orient: vertical;
+							text-overflow: ellipsis;
+							-webkit-line-clamp: 2;
+							word-break: break-word;
+
+							@media (min-width: 768px) {
+								font-size: 14px;
 							}
 						}
 						// .item-description {
@@ -993,8 +1019,11 @@
 	position: relative;
 	display: block;
 	width: 100%;
-	padding: 40px 0;
+	padding: 20px 0;
 	overflow: hidden;
+	@media (min-width: 992px) {
+		padding: 40px 0;
+	}
 	.unit-inner {
 		display: block;
 	}
@@ -1031,10 +1060,13 @@
 		.title-name {
 			position: relative;
 			display: inline-block;
-			font-size: 24px;
+			font-size: 20px;
 			line-height: 31px;
 			text-transform: uppercase;
 			z-index: 1;
+			@media (min-width: 768px) {
+				font-size: 32px;
+			}
 			&:after {
 				content: "";
 				position: absolute;
@@ -1049,9 +1081,6 @@
 				@media (min-width: 768px){
 					transform: scale(1.3);
 				}
-			}
-			@media (max-width: 768px) {
-				font-size: 20px;
 			}
 		}
 		.title-sub {
@@ -1212,6 +1241,9 @@
 	position: relative;
 	display: block;
 	padding: 20px 0 0;
+	@media (min-width: 768px) {
+		padding: 40px 0 0;
+	}
 	@media (min-width: 1200px) {
 		padding: 60px 0 0;
 		margin: 30px 0;
@@ -1221,24 +1253,25 @@
 		display: block;
 		width: 100%;
 		.section-box-title {
-			position: absolute;
+			position: relative;
 			display: block;
-			top: -10%;
-			left: 0;
-			right: 0;
-			margin: auto;
-			max-width: 700px;
-			vertical-align: top;
+			max-width: 500px;
+			width: 100%;
 			color: #ffffff;
 			margin-bottom: 20px;
 			text-align: center;
 			background-color: #000;
-
-			@media (max-width: 768px) {
-				position: relative;
+			@media (min-width: 768px) {
+				position: absolute;
 				top: unset;
 				left: unset;
-				width: 100%;
+				top: -10%;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+			@media (min-width: 992px) {
+				max-width: 700px;
 			}
 
 			.title-name {
@@ -1357,6 +1390,10 @@
 			.form-select {
 				color: #ced4da;
 				font-weight: 300;
+				background: url('../images/icons/icon_down.svg') no-repeat right;
+				background-color: rgba(227, 227, 227, 0.2);
+				-webkit-appearance: none;
+				background-position-x: 95%;
 				&:focus {
 					background: #2d2d2d;
 					color: #ffffff;
@@ -1397,6 +1434,16 @@
 		.contact-form-border {
 			border-color: #7fecff;
 			border-style: solid;
+		}
+	}
+	.frm-text-hotline {
+		text-align: center;
+		font-size: 18px;
+		font-weight: 300;
+		margin: 15px 0 0;
+		&__number {
+			text-decoration: none;
+			color: #fff;
 		}
 	}
 }
@@ -1492,11 +1539,14 @@
 				width: 100%;
 				margin-bottom: 15px;
 			}
+			.embed-responsive {
+				border-radius: 4px; 
+			}
 			.videoName {
 				position: relative;
 				display: inline-block;
 				margin: 13px 0 5px;
-				font-weight: bold;
+				font-weight: 500;
 				font-size: 20px;
 				line-height: 1.4;
 				color: #ffffff;
@@ -1528,7 +1578,7 @@
 			.item-video {
 				position: relative;
 				width: 100%;
-				padding: 8px 0;
+				padding: 0 0 15px;
 				// &:first-child {
 				// 	padding-top: 0;
 				// }

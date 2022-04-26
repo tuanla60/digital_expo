@@ -116,10 +116,15 @@ footer.footer {
 		align-items: center;
 		i {
 			margin-right: 5px;
+			text-align: center;
+			padding-top: 5px;
 		}
 	}
 	.footer-content__link {
 		text-decoration: none;
+	}
+	.footer-content__icon {
+		min-width: 15px;
 	}
 }
 // End footer

@@ -9,3 +9,28 @@
         font-size: 21px;
     }
 }
+
+// Typing Text
+.typing-text {
+    position: relative;
+    &::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        width: 100%;
+        color: #fff;
+        background: #000;
+        animation: typing-text 3s steps(17) forwards 3s, caret 1s infinite;
+    }
+}
+// animation
+@keyframes typing-text {
+    to {
+        width: 0;
+    }
+}
+@keyframes caret {
+    50% {
+        color: transparent;
+    }
+}
