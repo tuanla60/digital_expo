@@ -319,5 +319,5 @@ jQuery(function(){
 
 /*!---------------------------------
 @File: Script Layout Digital Expo
-@Update time: 2022-04-22-10h40
+@Update time: 2022-04-27-09h20
 ----------------------------------- */

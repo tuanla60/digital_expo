@@ -113,11 +113,10 @@ footer.footer {
 	}
 	.footer-content__info {
 		display: flex;
-		align-items: center;
 		i {
+			padding-top: 4px;
 			margin-right: 5px;
 			text-align: center;
-			padding-top: 5px;
 		}
 	}
 	.footer-content__link {

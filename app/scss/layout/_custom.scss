@@ -4,9 +4,9 @@
     backdrop-filter: blur(10px);
 }
 .swal2-title {
-    font-size: 18px;
+    font-size: 18px !important;
     @media (min-width: 768px) {
-        font-size: 21px;
+        font-size: 21px !important;
     }
 }
 

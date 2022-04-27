@@ -311,7 +311,7 @@ gulp.task('images_sync', gulp.parallel(
 
 // Watch Files For Changes | OK
 gulp.task('watch', function () {
-	gulp.watch('app/scss/**/*.scss', gulp.series('sass','cssreplaceDev','cssreplace'));
+	gulp.watch('app/scss/**/*.scss', gulp.series('sass','cssreplace'));
 	gulp.watch('app/js/**/*.js', gulp.series('js'), browserSync.reload);
 	gulp.watch('app/images/**/*', gulp.series('images'));
 	gulp.watch('app/scss/images-pc/**/*', gulp.series('images_sync'));
