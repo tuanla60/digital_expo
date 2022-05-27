@@ -237,7 +237,14 @@ function _counterUp() {
                 from: 1,
                 to: e,
                 speed: 3500,
-                refreshInterval: 50
+                refreshInterval: 50,
+                formatter: function (value, options) {
+                  return value.toFixed(options.decimals).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+                },
+                onComplete: function (value) {
+                  $(this).after('+');
+                  // console.debug(this);
+                }
             });
         });
     }
@@ -319,5 +326,5 @@ jQuery(function(){
 
 /*!---------------------------------
 @File: Script Layout Digital Expo
-@Update time: 2022-04-27-09h20
+@Update time: 2022-05-27-11h20
 ----------------------------------- */
